@@ -1,0 +1,5 @@
+# Contributing / Como contribuir
+
+English: open an issue describing a reproducible problem or proposed change. Use a branch and pull request; include relevant tests and update English and Brazilian Portuguese documentation together. Use synthetic test fixtures. Preserve official source artifacts and disclose data limitations. Never submit secrets, infrastructure, private paths or large raw/derived files. Do not claim a validated election year until its adapter and reconciliation evidence exist. Run `python -m unittest discover -s tests -v` before requesting review.
+
+Português: abra uma issue com problema reproduzível ou proposta. Use branch e pull request; inclua testes pertinentes e atualize documentação em inglês e português do Brasil em conjunto. Use dados sintéticos nos testes. Preserve fontes oficiais e explicite limitações. Nunca enviar segredos, infraestrutura, caminhos privados ou arquivos grandes brutos/derivados. Não declarar um ano validado sem adaptador e evidências de conciliação. Execute `python -m unittest discover -s tests -v` antes de pedir revisão.
