@@ -44,3 +44,7 @@ The current published report records 56 source packages, 69,947,081 parsed rows,
 ## What has and has not been verified
 
 The existing report checks source package hashes, key/quantity validity, duplicate vote keys, repeated metadata and ballot/turnout balances. It **does not report a full independent source-versus-Parquet multiset comparison**. Resume mode trusts existing conversion metadata and does not hash existing derived files again. For an independent reproduction, use a clean output directory/checkout and original sources. Parquet files are project-derived artifacts, not files signed or certified by the TSE. This process does not establish the presence of every expected section, verify urn digital signatures, or reproduce judicial adjustments to official totalization.
+
+## Historical collector / Coletor histórico
+
+The newer historical collector has separate settings and per-member fingerprint comparisons. See [historical data](historical-data.md); do not apply the earlier 2026 settings to every output.

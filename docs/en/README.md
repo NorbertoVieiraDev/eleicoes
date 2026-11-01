@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Provide publicly reusable election data acquisition and analysis, followed by an interactive website with candidate search, territorial navigation, maps and charts. Initial focus: 2026. Historical years are a later workstream. The interface defaults to Brazilian Portuguese; code identifiers and tooling use English.
+Provide publicly reusable election data acquisition and analysis, followed by an interactive website with candidate search, territorial navigation, maps and charts. The TSE catalog's 425 available tabular BU packages across 2012–2026 cycles and supplementary contests have been downloaded and converted locally; see the [historical data report](historical-data.md) and [package-level evidence](../../reports/history/conversion-records.json). The interface defaults to Brazilian Portuguese; code identifiers and tooling use English.
 
 ## Reproduction
 
@@ -31,7 +31,7 @@ Use parameterized queries in applications. Use `candidates` for BU display-name 
 
 ## Status and development
 
-See `reports/2026/` for generated validation evidence and [methodology](methodology.md) for interpretation. Development follows issue → branch → commit → PR → review and tests → approved promotion. A local test run is not a deployment approval. No deployment or infrastructure configuration belongs in this public repository.
+See `reports/2026/` and `reports/history/` for generated validation evidence and [methodology](methodology.md) for interpretation. The 2012–2026 historical outputs retain year-specific source schemas and are not yet a harmonized dashboard dataset. Development follows issue → branch → commit → PR → review and tests → approved promotion. A local test run is not a deployment approval. No deployment or infrastructure configuration belongs in this public repository.
 
 ## Roadmap
 
@@ -39,5 +39,5 @@ See `reports/2026/` for generated validation evidence and [methodology](methodol
 2. Reconcile against an independent expected-section roster and official aggregate results, preserving snapshot dates and legal vote-destination differences.
 3. Acquire candidate registers and official geographical crosswalks; add country mapping, boundaries and available voting-location coordinates.
 4. Build the responsive portal with a gray background and red/orange/yellow accents. No live public site exists yet.
-5. Add reviewed adapters, manifests and validation reports for 2024, 2022, 2020 and 2018. Do not claim historical coverage until processed.
+5. Review cross-election schema adapters and territorial/candidate mappings before building combined historical analytics.
 6. Evaluate separate distribution for large public derived datasets; no dataset hosting decision has been made.
