@@ -39,6 +39,14 @@ class HistoryTests(unittest.TestCase):
         c=duckdb.connect();rows=c.execute('select field_002 from read_parquet(?) order by 1',[str(root/m['parquet_file'])]).fetchall();c.close()
         self.assertEqual(rows,[('0001',),('0002',)])
 
+    def test_unescaped_quotes_in_candidate_name_are_repaired_and_recorded(self):
+        content='"DT_GERACAO";"NR_VOTAVEL";"NM_VOTAVEL"\n"18/11/2020";"17024";"ZÉ "APENAS PAPAI""\n'
+        root,result=self.run_source(content)
+        self.assertEqual(result['status'],'converted');m=result['members'][0]
+        self.assertGreater(m['csv_unescaped_quote_repairs'],0)
+        c=duckdb.connect();rows=c.execute('select NM_VOTAVEL from read_parquet(?)',[str(root/m['parquet_file'])]).fetchall();c.close()
+        self.assertEqual(rows,[('ZÉ "APENAS PAPAI"',)])
+
     def test_nested_archives_and_published_inner_checksum(self):
         root,result=self.run_source('DT_GERACAO;NR_TURNO\n01/01/2012;1\n',nested=True)
         self.assertEqual(result['status'],'converted');self.assertEqual(result['nested_archives'][0]['published_checksum_status'],'matched')
