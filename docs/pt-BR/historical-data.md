@@ -6,6 +6,24 @@ A busca oficial por `boletim`, em 01/11/2026, retornou 11 conjuntos com **425 re
 
 Os anos regulares têm respectivamente 46, 56, 46, 56, 54, 56, 52 e 56 recursos, mais três ZIPs externos de suplementares. Cobertura municipal difere da geral; não criar disputas de segundo turno inexistentes. As 425 URLs responderam HTTP 200 na verificação inicial por HEAD, com aproximadamente 13,78 GB compactados informados. Resposta HEAD não comprova conclusão de download ou conversão; consultar o relatório final.
 
+## Coleta concluída (01/11/2026)
+
+Os **425 de 425** pacotes ZIP externos encontrados no catálogo foram baixados e convertidos com sucesso. Eles produziram **466 arquivos Parquet locais**, **420.378.316 linhas** e **5.655.459.985 bytes** de Parquet (cerca de 5,66 GB decimais). O registro por pacote, com URL da fonte, SHA-512 do original, situação do hash publicado, membro de origem, SHA-512 da saída, linhas e campos de validação, está em [`reports/history/conversion-records.json`](../../reports/history/conversion-records.json). Uma auditoria separada recalculou o SHA-512 de cada ZIP baixado e de cada Parquet gerado; tamanhos e hashes conferiram. Contagens de linhas, nomes/ordem das colunas e impressões digitais DuckDB de todos os membros também conferiram.
+
+| Ciclo de catálogo | Pacotes ZIP | Membros Parquet | Linhas | Bytes Parquet |
+|---:|---:|---:|---:|---:|
+| 2012 | 46 | 46 | 34.430.589 | 206.369.956 |
+| 2014 | 56 | 56 | 56.748.147 | 258.592.988 |
+| 2016 | 46 | 46 | 36.685.609 | 168.634.421 |
+| 2018 | 56 | 56 | 73.552.486 | 349.764.055 |
+| 2020 | 55 | 83 | 37.911.271 | 247.162.413 |
+| 2022 | 57 | 57 | 72.978.729 | 460.030.267 |
+| 2024 | 53 | 66 | 38.124.404 | 1.395.039.627 |
+| 2026 | 56 | 56 | 69.947.081 | 2.569.866.258 |
+| **Total** | **425** | **466** | **420.378.316** | **5.655.459.985** |
+
+O catálogo listava hashes externos para 422 pacotes, e todos conferiram. Três ZIPs externos suplementares não tinham hash listado no catálogo; quando os arquivos internos tinham checksums no ZIP pai, eles foram verificados separadamente. Os CSVs de 2018 e 2020 continham **46.580 aspas sem escape** em campos de texto entre aspas (29.778 e 16.802, respectivamente). A etapa de compatibilidade documentada preserva essas aspas literais e registra a quantidade ajustada por membro; não ignora linhas malformadas. Os ZIPs e Parquets permanecem locais e fora do GitHub por causa do tamanho. O relatório e os scripts reproduzíveis são públicos; as impressões digitais lógicas são diagnósticos de consistência, não uma implementação independente nem uma prova sem colisões.
+
 ## Reprodução
 
 ```sh

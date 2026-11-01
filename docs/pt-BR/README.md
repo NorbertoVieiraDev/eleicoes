@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Disponibilizar coleta e análise reproduzíveis de dados eleitorais para reutilização pública e, depois, um site interativo com busca de candidatos, navegação territorial, mapas e gráficos. Foco inicial: 2026. Anos históricos serão uma etapa posterior. Interface em português do Brasil; identificadores e ferramentas em inglês.
+Disponibilizar coleta e análise reproduzíveis de dados eleitorais para reutilização pública e, depois, um site interativo com busca de candidatos, navegação territorial, mapas e gráficos. Os 425 pacotes tabulares de BU encontrados no catálogo do TSE, em ciclos de 2012 a 2026 e eleições suplementares, foram baixados e convertidos localmente; consulte o [guia histórico](historical-data.md) e as [evidências por pacote](../../reports/history/conversion-records.json). Interface em português do Brasil; identificadores e ferramentas em inglês.
 
 ## Reprodução
 
@@ -20,7 +20,7 @@ A tabela `candidates` serve para busca pelo nome presente no BU; `candidate_muni
 
 ## Situação e desenvolvimento
 
-Consulte `reports/2026/` para evidências geradas e a [metodologia](methodology.md) para interpretar os resultados. Fluxo: issue → branch → commit → PR → revisão e testes → promoção aprovada. Teste local não autoriza implantação. Este repositório público não deve conter configuração de implantação ou infraestrutura.
+Consulte `reports/2026/` e `reports/history/` para evidências geradas e a [metodologia](methodology.md) para interpretar os resultados. Os dados históricos de 2012–2026 mantêm os esquemas próprios de cada ano e ainda não formam uma base harmonizada para dashboard. Fluxo: issue → branch → commit → PR → revisão e testes → promoção aprovada. Teste local não autoriza implantação. Este repositório público não deve conter configuração de implantação ou infraestrutura.
 
 ## Próximas etapas
 
@@ -28,5 +28,5 @@ Consulte `reports/2026/` para evidências geradas e a [metodologia](methodology.
 2. Conferir contra cadastro independente de seções esperadas e resultados agregados oficiais, preservando datas das fontes e diferenças de destinação jurídica dos votos.
 3. Obter cadastro de candidatos e vínculos geográficos oficiais; adicionar países, malhas e coordenadas disponíveis dos locais de votação.
 4. Construir o portal responsivo com fundo cinza e detalhes em vermelho, laranja e amarelo. Ainda não existe site público operacional.
-5. Adicionar adaptadores revisados, manifestos e relatórios para 2024, 2022, 2020 e 2018. Não declarar cobertura histórica antes de processar.
+5. Revisar adaptadores entre eleições e vínculos geográficos/de candidatos antes de criar análises históricas combinadas.
 6. Avaliar distribuição separada das bases derivadas grandes; hospedagem dos dados ainda não definida.

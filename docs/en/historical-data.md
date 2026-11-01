@@ -6,6 +6,24 @@ The 2026-11-01 official catalog search for `boletim` returned 11 datasets with *
 
 The resource counts are 46, 56, 46, 56, 54, 56, 52 and 56 for the respective regular years, plus three supplementary outer ZIPs. Municipal-election coverage differs from general elections; missing second-round contests must not be invented. All 425 ZIP URLs responded HTTP 200 in the initial HEAD probe, totaling approximately 13.78 GB of reported compressed size. Successful HEAD probes are not proof of completed downloads or conversions; use the final conversion report.
 
+## Completed collection snapshot (2026-11-01)
+
+All **425 of 425** cataloged outer ZIP packages were downloaded and converted successfully. They produced **466 local Parquet member files**, **420,378,316 rows**, and **5,655,459,985 bytes** of Parquet output (about 5.66 GB decimal). The package-level record, including source URL, source SHA-512, published-checksum status, source member, output SHA-512, row count and validation fields, is [`reports/history/conversion-records.json`](../../reports/history/conversion-records.json). A separate audit recomputed the SHA-512 of every downloaded ZIP and every generated Parquet; all sizes and hashes matched the records. All member row counts, source column names/order and DuckDB logical fingerprints matched.
+
+| Catalog cycle | ZIP packages | Parquet members | Rows | Parquet bytes |
+|---:|---:|---:|---:|---:|
+| 2012 | 46 | 46 | 34,430,589 | 206,369,956 |
+| 2014 | 56 | 56 | 56,748,147 | 258,592,988 |
+| 2016 | 46 | 46 | 36,685,609 | 168,634,421 |
+| 2018 | 56 | 56 | 73,552,486 | 349,764,055 |
+| 2020 | 55 | 83 | 37,911,271 | 247,162,413 |
+| 2022 | 57 | 57 | 72,978,729 | 460,030,267 |
+| 2024 | 53 | 66 | 38,124,404 | 1,395,039,627 |
+| 2026 | 56 | 56 | 69,947,081 | 2,569,866,258 |
+| **Total** | **425** | **466** | **420,378,316** | **5,655,459,985** |
+
+The catalog listed and matched an outer-package checksum for 422 packages. Three supplementary outer ZIPs had no checksum listed in the catalog; where inner ZIP checksums were present in their parent archive they were verified separately. The 2018 and 2020 source CSVs contained **46,580 unescaped quote marks** inside quoted text fields (29,778 and 16,802 respectively). The documented compatibility step preserves those literal quote characters and records the repair count per member; it does not skip malformed rows. Actual source ZIPs and Parquets remain local and are excluded from GitHub because of their size. The report and reproducible scripts are public; the report's logical fingerprints are consistency diagnostics, not an independent implementation or collision-free proof.
+
 ## Reproduce
 
 ```sh

@@ -14,19 +14,21 @@ Exploração aberta e reproduzível dos dados eleitorais brasileiros publicados 
 
 ## Current scope / Escopo atual
 
-- **2026:** both rounds, 27 Brazilian UFs and overseas voting (ZZ); 56 published BU CSV ZIP packages downloaded and SHA-512 verified locally.
-- **2026:** dois turnos, 27 UFs e exterior (ZZ); 56 pacotes ZIP de CSV de BU baixados e verificados localmente por SHA-512.
-- The 2026 local query base is prepared; independent section-roster and official-total reconciliation remain pending. Historical elections and the interactive website are planned, not yet delivered.
-- Base local de consulta de 2026 preparada; conciliação independente de seções e totais oficiais ainda pendente. Eleições históricas e site interativo estão planejados, ainda não entregues.
+- **Historical BU files:** the TSE catalog snapshot contains 425 tabular ZIP packages across regular election cycles 2012–2026 and supplementary contests. All 425 were downloaded and converted locally into 466 Parquet member files (420,378,316 rows; approximately 5.66 GB). Original ZIPs and Parquets are excluded from Git; public package-level evidence is in [`reports/history/conversion-records.json`](reports/history/conversion-records.json).
+- **Arquivos históricos de BU:** o retrato do catálogo do TSE contém 425 pacotes ZIP tabulares dos ciclos regulares de 2012 a 2026 e eleições suplementares. Os 425 foram baixados e convertidos localmente em 466 arquivos Parquet (420.378.316 linhas; cerca de 5,66 GB). Os ZIPs e Parquets originais ficam fora do Git; as evidências por pacote estão em [`reports/history/conversion-records.json`](reports/history/conversion-records.json).
+- The 2026 analytical query base is prepared. Independent expected-section and official-total reconciliation remain pending; historical files are raw-format conversions, not a harmonized cross-election dashboard dataset. No interactive website is published yet.
+- A base analítica de consulta de 2026 está preparada. Ainda falta conciliar com cadastro independente de seções e totais oficiais; os arquivos históricos são conversões em formato bruto, não uma base harmonizada para dashboard entre eleições. Ainda não há site interativo publicado.
 
 ## Layout / Organização
 
 ```text
 data/
-  2026/
-    round-1/   # manifests and local raw/ downloads
+  <catalog-year>/
+    round-1/       # manifests and local raw/ downloads
     round-2/
-  README.md   # rules for adding historical elections
+    supplementary/ # where published by the TSE catalog
+  README.md        # rules for adding historical elections
+derived/history/  # local Parquet outputs; ignored by Git
 docs/
   en/
   pt-BR/
@@ -35,9 +37,9 @@ reports/      # aggregate validation evidence; no private paths
 tests/        # synthetic data tests
 ```
 
-Future elections use `data/<year>/round-<number>/`. Do not assume every election has two rounds or the same columns. Event/election identifiers distinguish simultaneous ordinary, supplementary and consultation contests.
+Election files use `data/<catalog-year>/round-<number>/` or `supplementary/`. Do not assume every election has two rounds or the same columns. Event/election identifiers distinguish simultaneous ordinary, supplementary and consultation contests.
 
-Eleições futuras usam `data/<ano>/round-<número>/`. Nem toda eleição tem dois turnos ou as mesmas colunas. Identificadores de pleito/eleição distinguem disputas ordinárias, suplementares e consultas simultâneas.
+Os arquivos usam `data/<ano-catalogo>/round-<número>/` ou `supplementary/`. Nem toda eleição tem dois turnos ou as mesmas colunas. Identificadores de pleito/eleição distinguem disputas ordinárias, suplementares e consultas simultâneas.
 
 ## Quick start / Início rápido
 
