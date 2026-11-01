@@ -1,5 +1,7 @@
 # Methodology and data model
 
+Read the [CSV-to-Parquet transformation and reproducibility guide](parquet-transparency.md).
+
 ## Provenance and layers
 
 Versioned manifests identify official ZIP URLs, published SHA-512 values, source sizes and archive members. Local originals are immutable references. The raw Parquet layer preserves the CSV columns as text and adds `source_package` and `source_sha512`. The analytical `votes` view casts quantities strictly and pads electoral municipality (5), zone (4) and section (4) identifiers. The effective urn number remains text.

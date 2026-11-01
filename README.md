@@ -6,6 +6,10 @@ Open, reproducible exploration of Brazilian election data published by the **Tri
 
 Exploração aberta e reproduzível dos dados eleitorais brasileiros publicados pelo **Tribunal Superior Eleitoral (TSE)**. Projeto independente, sem vínculo com o TSE ou partidos políticos.
 
+## CSV → Parquet: transparency / transparência
+
+[How the conversion works and how to verify it](docs/en/parquet-transparency.md) · [Como a conversão funciona e como conferir](docs/pt-BR/parquet-transparency.md)
+
 ## Current scope / Escopo atual
 
 - **2026:** both rounds, 27 Brazilian UFs and overseas voting (ZZ); 56 published BU CSV ZIP packages downloaded and SHA-512 verified locally.

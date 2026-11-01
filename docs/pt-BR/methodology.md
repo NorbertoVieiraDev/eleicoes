@@ -1,5 +1,7 @@
 # Metodologia e modelo de dados
 
+Consulte o [guia de transformação CSV para Parquet e reprodução independente](parquet-transparency.md).
+
 ## Proveniência e camadas
 
 Manifestos versionados identificam URLs oficiais, SHA-512 publicados, tamanhos e conteúdo dos ZIPs. Originais locais são referências preservadas. O Parquet bruto mantém as colunas do CSV como texto e adiciona `source_package` e `source_sha512`. A visão `votes` converte quantidades com validação estrita e completa códigos eleitorais de município (5), zona (4) e seção (4) com zeros. O número da urna efetivada permanece texto.
