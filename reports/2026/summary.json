@@ -1,0 +1,39 @@
+{
+  "packages": 56,
+  "source_rows": 69947081,
+  "parquet_bytes": 2569872972,
+  "section_office_rows": 3029750,
+  "candidates_rows": 19121,
+  "territories_rows": 5716,
+  "candidate_municipality_rows": 2238145,
+  "checks": {
+    "metadata_conflicts": 0,
+    "turnout_imbalances": 0,
+    "ballot_imbalances": 0,
+    "duplicate_vote_keys": 0,
+    "negative_vote_rows": 0
+  },
+  "null_keys_or_measures": 0,
+  "invalid_source_identity_or_code_width": 0,
+  "source_placeholder_rows": 2,
+  "observed_sections_by_round": [
+    {
+      "round": 1,
+      "source_sections": 499206,
+      "contest_sections": 499206
+    },
+    {
+      "round": 2,
+      "source_sections": 499207,
+      "contest_sections": 499205
+    }
+  ],
+  "aggregation_alias_conflicts": 0,
+  "unparsed_aggregation_values": 0,
+  "limitations": [
+    "Published packages only; independent expected-section roster reconciliation pending.",
+    "BU votes are not judicially adjusted official totalization.",
+    "Country mapping for overseas and IBGE map code crosswalk pending.",
+    "Candidate names are BU display names, not necessarily full registered names."
+  ]
+}
