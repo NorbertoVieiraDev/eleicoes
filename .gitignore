@@ -1,0 +1,29 @@
+# Large official data and derived local databases
+**/raw/
+derived/
+*.zip
+*.jez
+*.dat
+*.parquet
+*.duckdb*
+*.part
+*.log
+# Local environments and sensitive/private configuration
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+**/infrastructure/
+**/infra/
+**/terraform/
+*.tfstate*
+.DS_Store
