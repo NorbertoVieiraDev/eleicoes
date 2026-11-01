@@ -39,29 +39,36 @@ def repair_unescaped_quotes(line):
     """
     out=[];quoted=False;field_content=False;repairs=0;i=0
     while i<len(line):
-        ch=line[i]
         if not quoted:
-            out.append(ch)
-            if ch=='"':quoted=True;field_content=False
-            elif ch==';':field_content=False
-            elif ch not in '\r\n':field_content=True
-            i+=1;continue
-        if ch!='"':
-            out.append(ch);field_content=True;i+=1;continue
-        nxt=line[i+1] if i+1<len(line) else ''
-        after=line[i+2] if i+2<len(line) else ''
+            q=line.find('"',i)
+            if q<0:
+                tail=line[i:];out.append(tail)
+                if ';' in tail:field_content=bool(tail.rsplit(';',1)[-1].strip('\r\n'))
+                elif tail.strip('\r\n'):field_content=True
+                break
+            prefix=line[i:q];out.append(prefix)
+            if ';' in prefix:field_content=bool(prefix.rsplit(';',1)[-1].strip('\r\n'))
+            elif prefix.strip('\r\n'):field_content=True
+            if field_content:
+                out.extend(('"','"'));repairs+=1;i=q+1;continue
+            out.append('"');quoted=True;field_content=False;i=q+1;continue
+        q=line.find('"',i)
+        if q<0:
+            out.append(line[i:]);field_content=True;break
+        segment=line[i:q];out.append(segment)
+        if segment:field_content=True
+        nxt=line[q+1] if q+1<len(line) else ''
+        after=line[q+2] if q+2<len(line) else ''
         if nxt=='"':
             if after in (';','\r','\n',''):
-                if field_content:
-                    out.extend(('"','"','"'));repairs+=1
-                else:out.extend(('"','"'))
-                quoted=False;i+=2
-            else:
-                out.extend(('"','"'));i+=2
+                if field_content:out.append('"""');repairs+=1
+                else:out.append('""')
+                quoted=False;i=q+2
+            else:out.append('""');i=q+2
         elif nxt in (';','\r','\n',''):
-            out.append(ch);quoted=False;i+=1
+            out.append('"');quoted=False;i=q+1
         else:
-            out.extend(('"','"'));field_content=True;repairs+=1;i+=1
+            out.append('""');field_content=True;repairs+=1;i=q+1
     return ''.join(out),repairs
 
 def convert_member(c,z,member,r,out,source_sha,prefix=""):
