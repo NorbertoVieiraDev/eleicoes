@@ -112,7 +112,8 @@ def collect(r):
     raw=rawdir/r['filename'];meta=out/(r['filename']+'.json')
     if meta.exists():
         previous=json.loads(meta.read_text())
-        if previous.get('pipeline_version') in {1,VERSION} and previous.get('status')=='converted' and previous.get('source_url')==r['url'] and previous.get('published_checksum_url')==r.get('checksum_url') and all((ROOT/x['parquet_file']).exists() for x in previous['members'] if x['status']=='converted'):
+        compatible_versions={VERSION} if r['year'] in {2018,2020} else {1,VERSION}
+        if previous.get('pipeline_version') in compatible_versions and previous.get('status')=='converted' and previous.get('source_url')==r['url'] and previous.get('published_checksum_url')==r.get('checksum_url') and all((ROOT/x['parquet_file']).exists() for x in previous['members'] if x['status']=='converted'):
             print('RESUME',r['year'],r['filename'],flush=True);return previous
     result={'year':r['year'],'round':r['round'],'scope':r['scope'],'state':r['state'],'source_url':r['url'],'source_package':r['filename'],'pipeline_version':VERSION,'duckdb_version':duckdb.__version__,'members':[]}
     c=None
