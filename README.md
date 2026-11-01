@@ -10,6 +10,8 @@ Exploração aberta e reproduzível dos dados eleitorais brasileiros publicados 
 
 [How the conversion works and how to verify it](docs/en/parquet-transparency.md) · [Como a conversão funciona e como conferir](docs/pt-BR/parquet-transparency.md)
 
+[Historical BU collection and schema differences](docs/en/historical-data.md) · [Coleta histórica e diferenças de formato](docs/pt-BR/historical-data.md)
+
 ## Current scope / Escopo atual
 
 - **2026:** both rounds, 27 Brazilian UFs and overseas voting (ZZ); 56 published BU CSV ZIP packages downloaded and SHA-512 verified locally.

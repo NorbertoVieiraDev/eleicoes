@@ -44,3 +44,7 @@ O relatório atual registra 56 pacotes, 69.947.081 linhas interpretadas, aproxim
 ## Alcance das verificações
 
 O relatório existente confere hashes dos pacotes, validade das chaves/quantidades, duplicações de chave de voto, metadados e balanços de comparecimento/votos. **Não declara comparação independente completa dos multiconjuntos CSV versus Parquet.** A retomada confia nos metadados de conversões anteriores e não recalcula hashes dos derivados existentes. Para reproduzir independentemente, use diretório de saída/cópia de trabalho novo e as fontes originais. Parquets são derivados do projeto, não arquivos assinados ou certificados pelo TSE. A conversão não comprova presença de todas as seções esperadas, assinatura digital da urna ou reprodução dos ajustes jurídicos da totalização.
+
+## Historical collector / Coletor histórico
+
+O coletor histórico posterior tem parâmetros próprios e comparações por membro. Consulte [dados históricos](historical-data.md); não aplicar os parâmetros anteriores de 2026 a todas as saídas.

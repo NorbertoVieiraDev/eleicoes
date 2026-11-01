@@ -1,0 +1,24 @@
+{
+  "catalog_year": 2022,
+  "partition": "supplementary",
+  "retrieved_on": "2026-11-01",
+  "resources": [
+    {
+      "dataset": "resultados-eleicoes-suplementares-2022",
+      "dataset_url": "https://dadosabertos.tse.jus.br/dataset/resultados-eleicoes-suplementares-2022",
+      "year": 2022,
+      "round": null,
+      "scope": "supplementary",
+      "state": null,
+      "name": "Boletim de urna - BU na Web",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/buweb_ele_suplementares_2022.zip",
+      "catalog_url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/buweb_ele_suplementares_2022.zip",
+      "catalog_correction": null,
+      "checksum_url": null,
+      "source_format": "CSV",
+      "filename": "buweb_ele_suplementares_2022.zip",
+      "head_status": 200,
+      "head_bytes": 156653
+    }
+  ]
+}
