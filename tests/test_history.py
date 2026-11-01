@@ -6,7 +6,7 @@ spec=importlib.util.spec_from_file_location('history',ROOT/'scripts/collect_hist
 history=importlib.util.module_from_spec(spec);spec.loader.exec_module(history)
 
 class HistoryTests(unittest.TestCase):
-    def run_source(self,content,member='fixture.csv',nested=False,corrupt_checksum=False):
+    def run_source(self,content,member='fixture.csv',nested=False,corrupt_checksum=False,stale_part=False):
         temp=tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup);root=pathlib.Path(temp.name)
         raw=root/'data/2012/round-1/raw';raw.mkdir(parents=True)
         archive=raw/'fixture.zip'
@@ -17,6 +17,9 @@ class HistoryTests(unittest.TestCase):
                 blob=data.getvalue();z.writestr('event/inner.zip',blob)
                 z.writestr('event/inner.zip.sha512',('0'*128 if corrupt_checksum else hashlib.sha512(blob).hexdigest())+'  inner.zip')
             else:z.writestr(member,content.encode('latin-1'))
+        if stale_part:
+            out=root/'derived/history/2012/round-1';out.mkdir(parents=True)
+            (out/'fixture__0__fixture.parquet.part').write_bytes(b'interrupted output')
         r={'year':2012,'round':1,'scope':'regular','state':'AC','url':'https://cdn.tse.jus.br/fixture.zip','filename':'fixture.zip','checksum_url':None}
         before=history.ROOT
         try:
@@ -46,6 +49,11 @@ class HistoryTests(unittest.TestCase):
         self.assertGreater(m['csv_unescaped_quote_repairs'],0)
         c=duckdb.connect();rows=c.execute('select NM_VOTAVEL from read_parquet(?)',[str(root/m['parquet_file'])]).fetchall();c.close()
         self.assertEqual(rows,[('ZÉ "APENAS PAPAI"',)])
+
+    def test_interrupted_parquet_part_is_removed_before_retry(self):
+        root,result=self.run_source('DT_GERACAO;NR_TURNO\n01/01/2012;1\n',stale_part=True)
+        self.assertEqual(result['status'],'converted')
+        self.assertFalse(list((root/'derived').rglob('*.parquet.part')))
 
     def test_nested_archives_and_published_inner_checksum(self):
         root,result=self.run_source('DT_GERACAO;NR_TURNO\n01/01/2012;1\n',nested=True)

@@ -70,6 +70,7 @@ def convert_member(c,z,member,r,out,source_sha,prefix=""):
     scratch=out/(name+'.utf8.part')
     final=out/(name+'.parquet');part=out/(name+'.parquet.part')
     try:
+        if part.exists():part.unlink()
         with io.TextIOWrapper(z.open(member),encoding='latin-1',newline='') as src:
             first_source_line=src.readline()
             if not first_source_line:
