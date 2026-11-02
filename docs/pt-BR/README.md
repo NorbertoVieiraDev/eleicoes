@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Disponibilizar coleta e análise reproduzíveis de dados eleitorais para reutilização pública e, depois, um site interativo com busca de candidatos, navegação territorial, mapas e gráficos. Os 425 pacotes tabulares de BU encontrados no catálogo do TSE, em ciclos de 2012 a 2026 e eleições suplementares, foram baixados e convertidos localmente; consulte o [guia histórico](historical-data.md) e as [evidências por pacote](../../reports/history/conversion-records.json). Interface em português do Brasil; identificadores e ferramentas em inglês.
+Disponibilizar coleta e análise reproduzíveis de dados eleitorais para reutilização pública e, depois, um site interativo com busca de candidatos, navegação territorial, mapas e gráficos. Os 425 pacotes tabulares de BU encontrados no catálogo do TSE, em ciclos de 2012 a 2026 e eleições suplementares, e 170 pacotes de resultados por seção de 2000 a 2010 foram coletados. As tabelas canônicas locais contêm 637.673.681 linhas de votos e 16.849.380 totais por seção/urna. Consulte o [guia histórico](historical-data.md), as [evidências dos BUs](../../reports/history/conversion-records.json), o [relatório de downloads antigos](../../reports/history/legacy-results-downloads.json) e a [auditoria de disponibilidade dos campos](../../reports/history/canonical-coverage.json). Interface em português do Brasil; identificadores e ferramentas em inglês.
 
 ## Reprodução
 
@@ -20,7 +20,7 @@ A tabela `candidates` serve para busca pelo nome presente no BU; `candidate_muni
 
 ## Situação e desenvolvimento
 
-Consulte `reports/2026/` e `reports/history/` para evidências geradas e a [metodologia](methodology.md) para interpretar os resultados. Os dados históricos de 2012–2026 mantêm os esquemas próprios de cada ano e ainda não formam uma base harmonizada para dashboard. Fluxo: issue → branch → commit → PR → revisão e testes → promoção aprovada. Teste local não autoriza implantação. Este repositório público não deve conter configuração de implantação ou infraestrutura.
+Consulte `reports/2026/` e `reports/history/` para evidências geradas e a [metodologia](methodology.md) para interpretar os resultados. As tabelas canônicas de todos os ciclos ficam localmente e não entram no Git devido ao tamanho. Os resultados de 2000–2010 são totalizados por seção e não contêm número de urna; os BUs começam em 2012. Ainda falta conferir com cadastro independente de seções e totais oficiais, e não há dashboard hospedado ou base nacional publicada. Fluxo: issue → branch → commit → PR → revisão e testes → promoção aprovada. Teste local não autoriza implantação. Este repositório público não deve conter configuração de implantação ou infraestrutura.
 
 ## Próximas etapas
 

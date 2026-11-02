@@ -16,8 +16,10 @@ Exploração aberta e reproduzível dos dados eleitorais brasileiros publicados 
 
 - **Historical BU files:** the TSE catalog snapshot contains 425 tabular ZIP packages across regular election cycles 2012–2026 and supplementary contests. All 425 were downloaded and converted locally into 466 Parquet member files (420,378,316 rows; approximately 5.66 GB). Original ZIPs and Parquets are excluded from Git; public package-level evidence is in [`reports/history/conversion-records.json`](reports/history/conversion-records.json).
 - **Arquivos históricos de BU:** o retrato do catálogo do TSE contém 425 pacotes ZIP tabulares dos ciclos regulares de 2012 a 2026 e eleições suplementares. Os 425 foram baixados e convertidos localmente em 466 arquivos Parquet (420.378.316 linhas; cerca de 5,66 GB). Os ZIPs e Parquets originais ficam fora do Git; as evidências por pacote estão em [`reports/history/conversion-records.json`](reports/history/conversion-records.json).
-- The 2026 analytical query base is prepared. Independent expected-section and official-total reconciliation remain pending; historical files are raw-format conversions, not a harmonized cross-election dashboard dataset. No interactive website is published yet.
-- A base analítica de consulta de 2026 está preparada. Ainda falta conciliar com cadastro independente de seções e totais oficiais; os arquivos históricos são conversões em formato bruto, não uma base harmonizada para dashboard entre eleições. Ainda não há site interativo publicado.
+- **Cross-election canonical data:** 170 TSE ZIP resources from 2000–2010 were integrity-checked and normalized alongside BU records for 2012, 2014, 2016, 2018, 2020, 2022, 2024 and 2026. This produced 637,673,681 vote rows and 16,849,380 section/urn summary rows in 28 local Parquet files (about 4.14 GB). Results from 2000–2010 are only at section level and do not contain urn numbers. See [`reports/history/normalization-report.json`](reports/history/normalization-report.json) and the field-level [`coverage audit`](reports/history/canonical-coverage.json). All downloaded source ZIPs and derived Parquets are excluded from Git.
+- **Base histórica unificada:** 170 pacotes ZIP do TSE de 2000–2010 foram verificados e padronizados junto com os BUs de 2012, 2014, 2016, 2018, 2020, 2022, 2024 e 2026. O resultado local tem 637.673.681 linhas de votos e 16.849.380 linhas de totais por seção/urna em 28 Parquets (cerca de 4,14 GB). Os resultados de 2000–2010 só chegam ao nível de seção e não incluem número da urna. Consulte [`reports/history/normalization-report.json`](reports/history/normalization-report.json) e a [auditoria de disponibilidade por campo](reports/history/canonical-coverage.json). ZIPs e Parquets ficam fora do Git.
+- The 2026 analytical query base is prepared. Independent expected-section and official-total reconciliation remain pending. The canonical historical tables are available locally; no interactive website or hosted national dataset is published yet.
+- A base analítica de consulta de 2026 está preparada. Ainda falta conciliar com cadastro independente de seções e totais oficiais. As tabelas históricas unificadas estão disponíveis localmente; ainda não há site interativo nem hospedagem pública da base nacional.
 
 ## Layout / Organização
 
@@ -28,7 +30,8 @@ data/
     round-2/
     supplementary/ # where published by the TSE catalog
   README.md        # rules for adding historical elections
-derived/history/  # local Parquet outputs; ignored by Git
+derived/history/  # local source-layout Parquets; ignored by Git
+derived/canonical/ # local cross-election BI tables and coverage audit; ignored by Git
 docs/
   en/
   pt-BR/
