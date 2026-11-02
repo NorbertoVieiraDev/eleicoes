@@ -1,6 +1,7 @@
 # Large official data and derived local databases
 **/raw/
 derived/
+.tmp/
 *.zip
 *.jez
 *.dat

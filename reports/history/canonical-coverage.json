@@ -1,0 +1,2860 @@
+{
+  "scope": "Local canonical Parquet field coverage by catalog cycle and source basis",
+  "interpretation": "NULL counts include source markers documented as null/not recorded and fields unavailable in the source layout; use the raw source member and historical-data documentation to distinguish them. Zero values remain zero.",
+  "votes": {
+    "groups": [
+      {
+        "catalog_cycle": 2000,
+        "election_year": 2000,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 24076849,
+        "source_packages": 25,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 0,
+            "null_rows": 24076849,
+            "available_percent": 0.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 24076849,
+            "available_percent": 0.0
+          },
+          "office_code": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 24076849,
+            "available_percent": 0.0
+          },
+          "election_type_code": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 24076849,
+            "available_percent": 0.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 24076849,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 24076849,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 0,
+            "null_rows": 24076849,
+            "available_percent": 0.0
+          },
+          "votes": {
+            "non_null_rows": 24076849,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2002,
+        "election_year": 2002,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 41600879,
+        "source_packages": 27,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 41600879,
+            "available_percent": 0.0
+          },
+          "office_code": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 41600879,
+            "available_percent": 0.0
+          },
+          "election_type_code": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 41600879,
+            "available_percent": 0.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 41600879,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 41600879,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 0,
+            "null_rows": 41600879,
+            "available_percent": 0.0
+          },
+          "votes": {
+            "non_null_rows": 41600879,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2004,
+        "election_year": 2004,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 27927922,
+        "source_packages": 26,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 27927922,
+            "available_percent": 0.0
+          },
+          "office_code": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 27927922,
+            "available_percent": 0.0
+          },
+          "election_type_code": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 27927922,
+            "available_percent": 0.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 27927922,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 27927922,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 0,
+            "null_rows": 27927922,
+            "available_percent": 0.0
+          },
+          "votes": {
+            "non_null_rows": 27927922,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2006,
+        "election_year": 2006,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 45162249,
+        "source_packages": 27,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 45162249,
+            "available_percent": 0.0
+          },
+          "office_code": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 45162249,
+            "available_percent": 0.0
+          },
+          "election_type_code": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 45162249,
+            "available_percent": 0.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 45162249,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 45162249,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 0,
+            "null_rows": 45162249,
+            "available_percent": 0.0
+          },
+          "votes": {
+            "non_null_rows": 45162249,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2008,
+        "election_year": 2008,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 29525854,
+        "source_packages": 26,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 29525854,
+            "available_percent": 0.0
+          },
+          "office_code": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 29525854,
+            "available_percent": 0.0
+          },
+          "election_type_code": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 29525854,
+            "available_percent": 0.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 29525854,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 29525854,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 0,
+            "null_rows": 29525854,
+            "available_percent": 0.0
+          },
+          "votes": {
+            "non_null_rows": 29525854,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2010,
+        "election_year": 2010,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 49001612,
+        "source_packages": 29,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 48993921,
+            "null_rows": 7691,
+            "available_percent": 99.9843
+          },
+          "state_code": {
+            "non_null_rows": 49001612,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 49001612,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 49001612,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 49001612,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 48993921,
+            "null_rows": 7691,
+            "available_percent": 99.9843
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 49001612,
+            "available_percent": 0.0
+          },
+          "office_code": {
+            "non_null_rows": 49001612,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 49001612,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 48993921,
+            "null_rows": 7691,
+            "available_percent": 99.9843
+          },
+          "vote_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 49001612,
+            "available_percent": 0.0
+          },
+          "election_type_code": {
+            "non_null_rows": 48993921,
+            "null_rows": 7691,
+            "available_percent": 99.9843
+          },
+          "urn_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 49001612,
+            "available_percent": 0.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 49001612,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 49001612,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 0,
+            "null_rows": 49001612,
+            "available_percent": 0.0
+          },
+          "votes": {
+            "non_null_rows": 49001612,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2012,
+        "election_year": 2012,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 34430589,
+        "source_packages": 46,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "office_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 34430589,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 34430589,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 34430589,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2014,
+        "election_year": 2014,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 56748147,
+        "source_packages": 56,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 56736993,
+            "null_rows": 11154,
+            "available_percent": 99.9803
+          },
+          "state_code": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 56747986,
+            "null_rows": 161,
+            "available_percent": 99.9997
+          },
+          "office_code": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 56748056,
+            "null_rows": 91,
+            "available_percent": 99.9998
+          },
+          "candidate_name": {
+            "non_null_rows": 56748056,
+            "null_rows": 91,
+            "available_percent": 99.9998
+          },
+          "vote_type_code": {
+            "non_null_rows": 56748056,
+            "null_rows": 91,
+            "available_percent": 99.9998
+          },
+          "election_type_code": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 56748147,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 56748147,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 56748147,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2016,
+        "election_year": 2016,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 36685609,
+        "source_packages": 46,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 36681922,
+            "null_rows": 3687,
+            "available_percent": 99.9899
+          },
+          "office_code": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 36685592,
+            "null_rows": 17,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 36685592,
+            "null_rows": 17,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 36685592,
+            "null_rows": 17,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 0,
+            "null_rows": 36685609,
+            "available_percent": 0.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 36685609,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 36685609,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2018,
+        "election_year": 2018,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 73552486,
+        "source_packages": 56,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 73541172,
+            "null_rows": 11314,
+            "available_percent": 99.9846
+          },
+          "state_code": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "office_code": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 0,
+            "null_rows": 73552486,
+            "available_percent": 0.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 0,
+            "null_rows": 73552486,
+            "available_percent": 0.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 0,
+            "null_rows": 73552486,
+            "available_percent": 0.0
+          },
+          "votes": {
+            "non_null_rows": 73552486,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2020,
+        "election_year": 2018,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 81274,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "office_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 81274,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2020,
+        "election_year": 2020,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 37829997,
+        "source_packages": 51,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 37829993,
+            "null_rows": 4,
+            "available_percent": 100.0
+          },
+          "office_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 37829993,
+            "null_rows": 4,
+            "available_percent": 100.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 37829997,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2022,
+        "election_year": 2022,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 72978729,
+        "source_packages": 57,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 72966066,
+            "null_rows": 12663,
+            "available_percent": 99.9826
+          },
+          "state_code": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 72978724,
+            "null_rows": 5,
+            "available_percent": 100.0
+          },
+          "office_code": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 72978724,
+            "null_rows": 5,
+            "available_percent": 100.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 72978729,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2024,
+        "election_year": 2024,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 38124404,
+        "source_packages": 47,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 38124402,
+            "null_rows": 2,
+            "available_percent": 100.0
+          },
+          "office_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 38124402,
+            "null_rows": 2,
+            "available_percent": 100.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 38124404,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2026,
+        "election_year": 2026,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 69947081,
+        "source_packages": 56,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 69930069,
+            "null_rows": 17012,
+            "available_percent": 99.9757
+          },
+          "state_code": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "office_code": {
+            "non_null_rows": 69947079,
+            "null_rows": 2,
+            "available_percent": 100.0
+          },
+          "candidate_number": {
+            "non_null_rows": 69947079,
+            "null_rows": 2,
+            "available_percent": 100.0
+          },
+          "candidate_name": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "vote_type_code": {
+            "non_null_rows": 69947079,
+            "null_rows": 2,
+            "available_percent": 100.0
+          },
+          "election_type_code": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_type_code": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "aggregated_sections": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_issued_at": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "bu_received_at": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "votes": {
+            "non_null_rows": 69947081,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      }
+    ],
+    "files": [
+      {
+        "file": "derived/canonical/votes-2000.parquet",
+        "bytes": 61763117,
+        "sha512": "db6efbd7e98adea33e8a7078a20e652b40f2e015abb5d01e3380febf31b3c64020b280591f6fb28ffc1252844fd9958691fe4b43f5d63ef8f53209d9e77687d3"
+      },
+      {
+        "file": "derived/canonical/votes-2002.parquet",
+        "bytes": 107004981,
+        "sha512": "e2a0b9d425163cc825d2daef48a703b3756ef4f6a2afa10cdfd5164dca024e9c7241fde4e50ffc73ab5865183a68a7a55b75c126264672446104038af9f70db0"
+      },
+      {
+        "file": "derived/canonical/votes-2004.parquet",
+        "bytes": 70597713,
+        "sha512": "01fc4472fd99c2659c31e02ef81f8343607441323e46155974c74fb5f1f29aa6b8883c395f5de18cdafbb84db45ea1b4d3322860087b8f172d4e7f59b0b21d78"
+      },
+      {
+        "file": "derived/canonical/votes-2006.parquet",
+        "bytes": 118377776,
+        "sha512": "a01eaee3c68a772ea98e87e1e405765a17114e3fb8b475d5b861cba0f3c7b2ff5176a05c1a81691a60874e41580b15283bd80b6169a521c3f5efd31c406e1b8a"
+      },
+      {
+        "file": "derived/canonical/votes-2008.parquet",
+        "bytes": 73818095,
+        "sha512": "1ca63f1a68ee43c8853702e89705fde0c51b08d1c9b8f5a43560cf52d71cc97729d6db9872f3d24a3745a34afcd91f0f5c0ce3ca58e51d9cf295b7d9020afe8c"
+      },
+      {
+        "file": "derived/canonical/votes-2010.parquet",
+        "bytes": 123415421,
+        "sha512": "d92e7b02d5c4b95598c6c8a757e44b125678f1f82eea561e0d0221fc9fcfcbda68800625e79494017889e4846cc04f541329d20f693cd2aee8d5e38680587385"
+      },
+      {
+        "file": "derived/canonical/votes-2012.parquet",
+        "bytes": 180037914,
+        "sha512": "b105ad4e343fd49a6dcf6dde8e4d0b1f7183b6a0d628db2e7954fda662761bac43feb79c38027e91bc879ac2473c50d5ebfb66c6a8acff2f85b78564d3408c47"
+      },
+      {
+        "file": "derived/canonical/votes-2014.parquet",
+        "bytes": 232213975,
+        "sha512": "1a9ac7aa02a6438d529c939da379b168df7167046d5d4c9d45d6da524066fe9b151e184263f4ea526f7582be38ef010bc3ad182c38cfa99e7d8bf5c20e8bc230"
+      },
+      {
+        "file": "derived/canonical/votes-2016.parquet",
+        "bytes": 150502211,
+        "sha512": "5bcbb62313653f96267e08ef5ef68b8a04430b1fd4852eedb82a2ceecc654b91c3d854d392c5a728a1d9aae892d6e21c9d05a313341fce75f3e45d99f1ec9f3f"
+      },
+      {
+        "file": "derived/canonical/votes-2018.parquet",
+        "bytes": 264963961,
+        "sha512": "ef9592723af5fe23ebb179515db240205ab538ab02acd313c31a7f4f100ad5957f55761051bf7ab572e0bad663e4bb2d72dba840caab26dde563f14f3244557b"
+      },
+      {
+        "file": "derived/canonical/votes-2020.parquet",
+        "bytes": 201870344,
+        "sha512": "89a19bc108e0da8386f0fb79579a76842eb635e5392f2600bcd83b3ac2368585ab55be7fa54ebbbbaa2b68480f361ef6194e04204311e668600988d890f85507"
+      },
+      {
+        "file": "derived/canonical/votes-2022.parquet",
+        "bytes": 371593485,
+        "sha512": "2e69143ab2f2bdd3a1aeddb7164ec0b1d5cb739b6746908085c567f6896da462980f25cc19666cff483a3276d6f1136acb72264c8cc2a7313c62a571aa54d742"
+      },
+      {
+        "file": "derived/canonical/votes-2024.parquet",
+        "bytes": 745129474,
+        "sha512": "7dd0c924e1de7d6bd92d350ba8c96d79c2edb40cb2b3a9af2f3eb681610ab5b2775f44400ae7ea659eea469ea904ff1eb5a8eb9932624fe0fe3f7feac42feea8"
+      },
+      {
+        "file": "derived/canonical/votes-2026.parquet",
+        "bytes": 1309035523,
+        "sha512": "77d76d632f0d3a155297fbfd1bf0b295a265cdca1b30ad6359d44aa91f9ac434e9072ec8eb028d52e396d143d00f5c7546ec84870cb91188010afff66a64753a"
+      }
+    ],
+    "rows": 637673681,
+    "files_count": 14
+  },
+  "sections": {
+    "groups": [
+      {
+        "catalog_cycle": 2000,
+        "election_year": 2000,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 616675,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 0,
+            "null_rows": 616675,
+            "available_percent": 0.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 616675,
+            "available_percent": 0.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "blank_votes": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "null_votes": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "legend_votes": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 616675,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2002,
+        "election_year": 2002,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 2083665,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 2083165,
+            "null_rows": 500,
+            "available_percent": 99.976
+          },
+          "state_code": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 2083665,
+            "available_percent": 0.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "blank_votes": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "null_votes": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "legend_votes": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 2083665,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2004,
+        "election_year": 2004,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 733599,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 733599,
+            "available_percent": 0.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "blank_votes": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "null_votes": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "legend_votes": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 733599,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2006,
+        "election_year": 2006,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 2323870,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 2323286,
+            "null_rows": 584,
+            "available_percent": 99.9749
+          },
+          "state_code": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 2323870,
+            "available_percent": 0.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "blank_votes": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "null_votes": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "legend_votes": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 2323870,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2008,
+        "election_year": 2008,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 818830,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 818830,
+            "available_percent": 0.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "blank_votes": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "null_votes": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "legend_votes": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 818830,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2010,
+        "election_year": 2010,
+        "source_basis": "official_section_result",
+        "source_granularity": "section",
+        "row_count": 2456141,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 2454665,
+            "null_rows": 1476,
+            "available_percent": 99.9399
+          },
+          "state_code": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 0,
+            "null_rows": 2456141,
+            "available_percent": 0.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "blank_votes": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "null_votes": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "legend_votes": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 2456141,
+            "null_rows": 0,
+            "available_percent": 100.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2012,
+        "election_year": 2012,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 493865,
+        "source_packages": 46,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 493865,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 493865,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 493865,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 493865,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 493865,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 493865,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2014,
+        "election_year": 2014,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 859958,
+        "source_packages": 56,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 858050,
+            "null_rows": 1908,
+            "available_percent": 99.7781
+          },
+          "state_code": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 859874,
+            "null_rows": 84,
+            "available_percent": 99.9902
+          },
+          "eligible_electors": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 859958,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 859958,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 859958,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 859958,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 859958,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 859958,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2016,
+        "election_year": 2016,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 523495,
+        "source_packages": 46,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 523447,
+            "null_rows": 48,
+            "available_percent": 99.9908
+          },
+          "eligible_electors": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 523495,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 523495,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 523495,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 523495,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 523495,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 523495,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2018,
+        "election_year": 2018,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 1641808,
+        "source_packages": 56,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 1640240,
+            "null_rows": 1568,
+            "available_percent": 99.9045
+          },
+          "state_code": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 1641808,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1641808,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1641808,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1641808,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1641808,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1641808,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2020,
+        "election_year": 2018,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 6633,
+        "source_packages": 1,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 6633,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 6633,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 6633,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 6633,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 6633,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 6633,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2020,
+        "election_year": 2020,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 504259,
+        "source_packages": 51,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 504257,
+            "null_rows": 2,
+            "available_percent": 99.9996
+          },
+          "eligible_electors": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 504259,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 504259,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 504259,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 504259,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 504259,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 504259,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2022,
+        "election_year": 2022,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 1665598,
+        "source_packages": 57,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 1663562,
+            "null_rows": 2036,
+            "available_percent": 99.8778
+          },
+          "state_code": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 1665593,
+            "null_rows": 5,
+            "available_percent": 99.9997
+          },
+          "eligible_electors": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 1665598,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1665598,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1665598,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1665598,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1665598,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1665598,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2024,
+        "election_year": 2024,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 584925,
+        "source_packages": 47,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "state_code": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 584924,
+            "null_rows": 1,
+            "available_percent": 99.9998
+          },
+          "eligible_electors": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 584925,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 584925,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 584925,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 584925,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 584925,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 584925,
+            "available_percent": 0.0
+          }
+        }
+      },
+      {
+        "catalog_cycle": 2026,
+        "election_year": 2026,
+        "source_basis": "boletim_de_urna",
+        "source_granularity": "urn_section",
+        "row_count": 1536059,
+        "source_packages": 56,
+        "field_coverage": {
+          "country_code": {
+            "non_null_rows": 1533440,
+            "null_rows": 2619,
+            "available_percent": 99.8295
+          },
+          "state_code": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "municipality_code": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "zone_number": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "section_number": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "voting_location_code": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "urn_number": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "eligible_electors": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "attendance": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "absentees": {
+            "non_null_rows": 1536059,
+            "null_rows": 0,
+            "available_percent": 100.0
+          },
+          "nominal_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1536059,
+            "available_percent": 0.0
+          },
+          "blank_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1536059,
+            "available_percent": 0.0
+          },
+          "null_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1536059,
+            "available_percent": 0.0
+          },
+          "legend_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1536059,
+            "available_percent": 0.0
+          },
+          "annulled_votes": {
+            "non_null_rows": 0,
+            "null_rows": 1536059,
+            "available_percent": 0.0
+          }
+        }
+      }
+    ],
+    "files": [
+      {
+        "file": "derived/canonical/sections-2000.parquet",
+        "bytes": 4050311,
+        "sha512": "00e769c01faf7d182e46b07648f8ef7bb84a2e6b1ffae1e57c117642402663caa5cad8779b7d60b56c9d26a6ad66faf2ba7a8bd85151dd477ee5a31c11b76003"
+      },
+      {
+        "file": "derived/canonical/sections-2002.parquet",
+        "bytes": 10288319,
+        "sha512": "c7a361c96091b24fd512e0fc19da847a3a00dd98907b5ba5b7403b5b49a530007cf123f721c60469c034c7af1d677a72a3e3a389e49706152945d4e5ca7a3009"
+      },
+      {
+        "file": "derived/canonical/sections-2004.parquet",
+        "bytes": 5086081,
+        "sha512": "df5d612200a64c4c522b157f59b0e1c51808b015647ec923eed495449ea3d42a09dc215e8b22012544eb88277b2de58be4c2cf3576487dcdc01be296a67a9b4e"
+      },
+      {
+        "file": "derived/canonical/sections-2006.parquet",
+        "bytes": 11438518,
+        "sha512": "ea0af400c025178879ecfb3875750eca5826195227114438d9b215b7880793338a3a99bdac1f05885155a25aee3d1bf829262a661e82fbb09474be8d1323adf4"
+      },
+      {
+        "file": "derived/canonical/sections-2008.parquet",
+        "bytes": 5773047,
+        "sha512": "c4a09559b48dfe81e5d3a1a3b971073dbaf4a2c9b719ed3062c8ce7859db44b4503d503458f102011a14c0f4dc6ad5e4ae6fee10ea5cebc0f22acd3dc975cf50"
+      },
+      {
+        "file": "derived/canonical/sections-2010.parquet",
+        "bytes": 11894026,
+        "sha512": "81b8481e38e99658fafeda4bf7f39a124beb5e3c7dc64f8dcac6df8aa7413f2f17ae63e85f1fccbd26756eac241a62f7446fee50fd8664610622f7ffc83ef537"
+      },
+      {
+        "file": "derived/canonical/sections-2012.parquet",
+        "bytes": 6202059,
+        "sha512": "72ed6f3fee663e3a35138a1824a0c2405ea47e059c3d59ecb107ae4c491b44b80ccbbc7b2ed26df421e920d6e0cf0eb23beac04b24d0c076fa15633abc7e9ba1"
+      },
+      {
+        "file": "derived/canonical/sections-2014.parquet",
+        "bytes": 8159589,
+        "sha512": "3475b2766b7cd40f56e909dfe7fd1cb96c76aeb0ac59ae43548a74d2ccb84d7012f87001e83b61b5c1a6db85c0543fbe80f12913574c9c59dfdfbf96683dd7ce"
+      },
+      {
+        "file": "derived/canonical/sections-2016.parquet",
+        "bytes": 4850249,
+        "sha512": "a3dd59dba49a89bc06eb2a5f12c42d120f052e25e3ecdb4ef5d22ec3b0c8c92b821381f08add19fa168aba9693eb5dae6cbfa789f01bc8379cc2d1c95377b5bf"
+      },
+      {
+        "file": "derived/canonical/sections-2018.parquet",
+        "bytes": 15097677,
+        "sha512": "e2f7fbfffbb8f1dcb11621b6c0cb4ba3002c4d4cca5ad1a33e84e249c5293497e3cde0fd33b8a2c986436ef1523471da2a491bcf035138f921317028d0b9c91f"
+      },
+      {
+        "file": "derived/canonical/sections-2020.parquet",
+        "bytes": 5035023,
+        "sha512": "d9ca131cdd217831e06135a5bb239fbf8c00af8605b412f9ac60bbc3778710c7625902c35f370a77d772116dbe0ec3d2aa91634e5fbda809d37a35123a108152"
+      },
+      {
+        "file": "derived/canonical/sections-2022.parquet",
+        "bytes": 14808146,
+        "sha512": "c33d2d833ab89423290b3c113235982c4a4518e894ee843b43e999cb35434e0f08c12c000089ee9c96eefa6bcefd10f6015927f5a274f4272a174c5a635f42d1"
+      },
+      {
+        "file": "derived/canonical/sections-2024.parquet",
+        "bytes": 7218842,
+        "sha512": "8282277b8eaeb8bbd1cca3289df4b8c6459460a721323609df8c2ec0189202ddacf72c50fdb5d2ac2c170e745dd77eba89d9826c3d045b4feab2288b35b1fa8e"
+      },
+      {
+        "file": "derived/canonical/sections-2026.parquet",
+        "bytes": 22232555,
+        "sha512": "f51c64b941ab8cdca25fb7f4309f189d58e7dfc9a249edbb301baafecfe037829ccdb1cda75edf1aac4108ef2f94e10357955008da905ab30d995b594ed66b5e"
+      }
+    ],
+    "rows": 16849380,
+    "files_count": 14
+  }
+}

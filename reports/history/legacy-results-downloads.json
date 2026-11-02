@@ -1,0 +1,1199 @@
+{
+  "scope": "Official TSE result-by-section and section-detail archives, catalog cycles 2000–2010",
+  "resource_count": 170,
+  "verified": 170,
+  "failed": 0,
+  "results": [
+    {
+      "year": 2000,
+      "filename": "detalhe_votacao_secao_2000.zip",
+      "scope": "all_states",
+      "bytes": 16559112,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_AC.zip",
+      "scope": "state",
+      "bytes": 731847,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_AL.zip",
+      "scope": "state",
+      "bytes": 2579449,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_AM.zip",
+      "scope": "state",
+      "bytes": 4414325,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_AP.zip",
+      "scope": "state",
+      "bytes": 715841,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_BA.zip",
+      "scope": "state",
+      "bytes": 14016255,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_CE.zip",
+      "scope": "state",
+      "bytes": 8674736,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_ES.zip",
+      "scope": "state",
+      "bytes": 4493832,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_GO.zip",
+      "scope": "state",
+      "bytes": 7173836,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_MA.zip",
+      "scope": "state",
+      "bytes": 1800739,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_MG.zip",
+      "scope": "state",
+      "bytes": 27775462,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_MS.zip",
+      "scope": "state",
+      "bytes": 3295104,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_MT.zip",
+      "scope": "state",
+      "bytes": 2432893,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_PA.zip",
+      "scope": "state",
+      "bytes": 6452951,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_PB.zip",
+      "scope": "state",
+      "bytes": 3695542,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_PE.zip",
+      "scope": "state",
+      "bytes": 10027556,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_PI.zip",
+      "scope": "state",
+      "bytes": 2630132,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_PR.zip",
+      "scope": "state",
+      "bytes": 13823752,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_RJ.zip",
+      "scope": "state",
+      "bytes": 30754902,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_RN.zip",
+      "scope": "state",
+      "bytes": 2638845,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_RO.zip",
+      "scope": "state",
+      "bytes": 2204971,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_RR.zip",
+      "scope": "state",
+      "bytes": 700526,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_RS.zip",
+      "scope": "state",
+      "bytes": 15701963,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_SC.zip",
+      "scope": "state",
+      "bytes": 6165671,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_SE.zip",
+      "scope": "state",
+      "bytes": 1355911,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_SP.zip",
+      "scope": "state",
+      "bytes": 57908801,
+      "status": "verified"
+    },
+    {
+      "year": 2000,
+      "filename": "votacao_secao_2000_TO.zip",
+      "scope": "state",
+      "bytes": 334743,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "detalhe_votacao_secao_2002.zip",
+      "scope": "all_states",
+      "bytes": 58040971,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_AC.zip",
+      "scope": "state",
+      "bytes": 2192674,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_AL.zip",
+      "scope": "state",
+      "bytes": 4979618,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_AM.zip",
+      "scope": "state",
+      "bytes": 6581139,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_AP.zip",
+      "scope": "state",
+      "bytes": 1947807,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_BA.zip",
+      "scope": "state",
+      "bytes": 26990540,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_BR.zip",
+      "scope": "national",
+      "bytes": 19858557,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_CE.zip",
+      "scope": "state",
+      "bytes": 17402987,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_DF.zip",
+      "scope": "state",
+      "bytes": 11344510,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_ES.zip",
+      "scope": "state",
+      "bytes": 8037490,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_GO.zip",
+      "scope": "state",
+      "bytes": 13202569,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_MA.zip",
+      "scope": "state",
+      "bytes": 10982051,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_MG.zip",
+      "scope": "state",
+      "bytes": 46912457,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_MS.zip",
+      "scope": "state",
+      "bytes": 4801792,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_MT.zip",
+      "scope": "state",
+      "bytes": 4042387,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_PA.zip",
+      "scope": "state",
+      "bytes": 14062316,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_PB.zip",
+      "scope": "state",
+      "bytes": 7093605,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_PE.zip",
+      "scope": "state",
+      "bytes": 22150387,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_PI.zip",
+      "scope": "state",
+      "bytes": 5336785,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_PR.zip",
+      "scope": "state",
+      "bytes": 25408005,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_RJ.zip",
+      "scope": "state",
+      "bytes": 81394499,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_RN.zip",
+      "scope": "state",
+      "bytes": 5415335,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_RO.zip",
+      "scope": "state",
+      "bytes": 3810063,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_RR.zip",
+      "scope": "state",
+      "bytes": 1866193,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_RS.zip",
+      "scope": "state",
+      "bytes": 33908875,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_SC.zip",
+      "scope": "state",
+      "bytes": 11025397,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_SE.zip",
+      "scope": "state",
+      "bytes": 4265837,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_SP.zip",
+      "scope": "state",
+      "bytes": 149143307,
+      "status": "verified"
+    },
+    {
+      "year": 2002,
+      "filename": "votacao_secao_2002_TO.zip",
+      "scope": "state",
+      "bytes": 2147579,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "detalhe_votacao_secao_2004.zip",
+      "scope": "all_states",
+      "bytes": 20633231,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_AC.zip",
+      "scope": "state",
+      "bytes": 950497,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_AL.zip",
+      "scope": "state",
+      "bytes": 2990635,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_AM.zip",
+      "scope": "state",
+      "bytes": 6578864,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_AP.zip",
+      "scope": "state",
+      "bytes": 835128,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_BA.zip",
+      "scope": "state",
+      "bytes": 18141647,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_CE.zip",
+      "scope": "state",
+      "bytes": 12762302,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_ES.zip",
+      "scope": "state",
+      "bytes": 4714649,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_GO.zip",
+      "scope": "state",
+      "bytes": 9477375,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_MA.zip",
+      "scope": "state",
+      "bytes": 6663420,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_MG.zip",
+      "scope": "state",
+      "bytes": 30513442,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_MS.zip",
+      "scope": "state",
+      "bytes": 3243165,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_MT.zip",
+      "scope": "state",
+      "bytes": 1572382,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_PA.zip",
+      "scope": "state",
+      "bytes": 9538078,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_PB.zip",
+      "scope": "state",
+      "bytes": 4565227,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_PE.zip",
+      "scope": "state",
+      "bytes": 11988963,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_PI.zip",
+      "scope": "state",
+      "bytes": 3405080,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_PR.zip",
+      "scope": "state",
+      "bytes": 14714569,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_RJ.zip",
+      "scope": "state",
+      "bytes": 33922624,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_RN.zip",
+      "scope": "state",
+      "bytes": 3220608,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_RO.zip",
+      "scope": "state",
+      "bytes": 2353496,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_RR.zip",
+      "scope": "state",
+      "bytes": 756639,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_RS.zip",
+      "scope": "state",
+      "bytes": 16122316,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_SC.zip",
+      "scope": "state",
+      "bytes": 5961573,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_SE.zip",
+      "scope": "state",
+      "bytes": 2249911,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_SP.zip",
+      "scope": "state",
+      "bytes": 69640078,
+      "status": "verified"
+    },
+    {
+      "year": 2004,
+      "filename": "votacao_secao_2004_TO.zip",
+      "scope": "state",
+      "bytes": 1463507,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "detalhe_votacao_secao_2006.zip",
+      "scope": "all_states",
+      "bytes": 63608788,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_AC.zip",
+      "scope": "state",
+      "bytes": 2141595,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_AL.zip",
+      "scope": "state",
+      "bytes": 5497778,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_AM.zip",
+      "scope": "state",
+      "bytes": 8130114,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_AP.zip",
+      "scope": "state",
+      "bytes": 2246078,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_BA.zip",
+      "scope": "state",
+      "bytes": 32168761,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_BR.zip",
+      "scope": "national",
+      "bytes": 22094673,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_CE.zip",
+      "scope": "state",
+      "bytes": 20012388,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_DF.zip",
+      "scope": "state",
+      "bytes": 13070654,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_ES.zip",
+      "scope": "state",
+      "bytes": 7819075,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_GO.zip",
+      "scope": "state",
+      "bytes": 14849607,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_MA.zip",
+      "scope": "state",
+      "bytes": 14037777,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_MG.zip",
+      "scope": "state",
+      "bytes": 50296362,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_MS.zip",
+      "scope": "state",
+      "bytes": 4762763,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_MT.zip",
+      "scope": "state",
+      "bytes": 4742972,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_PA.zip",
+      "scope": "state",
+      "bytes": 15456363,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_PB.zip",
+      "scope": "state",
+      "bytes": 7464485,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_PE.zip",
+      "scope": "state",
+      "bytes": 24022727,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_PI.zip",
+      "scope": "state",
+      "bytes": 5940380,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_PR.zip",
+      "scope": "state",
+      "bytes": 26433577,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_RJ.zip",
+      "scope": "state",
+      "bytes": 80204241,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_RN.zip",
+      "scope": "state",
+      "bytes": 5599941,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_RO.zip",
+      "scope": "state",
+      "bytes": 3973213,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_RR.zip",
+      "scope": "state",
+      "bytes": 2054603,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_RS.zip",
+      "scope": "state",
+      "bytes": 37948054,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_SC.zip",
+      "scope": "state",
+      "bytes": 11731101,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_SE.zip",
+      "scope": "state",
+      "bytes": 3208478,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_SP.zip",
+      "scope": "state",
+      "bytes": 161113159,
+      "status": "verified"
+    },
+    {
+      "year": 2006,
+      "filename": "votacao_secao_2006_TO.zip",
+      "scope": "state",
+      "bytes": 2711695,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "detalhe_votacao_secao_2008.zip",
+      "scope": "all_states",
+      "bytes": 23125768,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_AC.zip",
+      "scope": "state",
+      "bytes": 1181036,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_AL.zip",
+      "scope": "state",
+      "bytes": 3905888,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_AM.zip",
+      "scope": "state",
+      "bytes": 10150184,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_AP.zip",
+      "scope": "state",
+      "bytes": 1313066,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_BA.zip",
+      "scope": "state",
+      "bytes": 26811663,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_CE.zip",
+      "scope": "state",
+      "bytes": 17349515,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_ES.zip",
+      "scope": "state",
+      "bytes": 6124391,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_GO.zip",
+      "scope": "state",
+      "bytes": 11597564,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_MA.zip",
+      "scope": "state",
+      "bytes": 10924665,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_MG.zip",
+      "scope": "state",
+      "bytes": 41904989,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_MS.zip",
+      "scope": "state",
+      "bytes": 3938207,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_MT.zip",
+      "scope": "state",
+      "bytes": 4814814,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_PA.zip",
+      "scope": "state",
+      "bytes": 13957664,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_PB.zip",
+      "scope": "state",
+      "bytes": 5932073,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_PE.zip",
+      "scope": "state",
+      "bytes": 16620367,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_PI.zip",
+      "scope": "state",
+      "bytes": 4166314,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_PR.zip",
+      "scope": "state",
+      "bytes": 22510577,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_RJ.zip",
+      "scope": "state",
+      "bytes": 43708783,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_RN.zip",
+      "scope": "state",
+      "bytes": 4114239,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_RO.zip",
+      "scope": "state",
+      "bytes": 3354159,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_RR.zip",
+      "scope": "state",
+      "bytes": 1110654,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_RS.zip",
+      "scope": "state",
+      "bytes": 20923159,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_SC.zip",
+      "scope": "state",
+      "bytes": 9253798,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_SE.zip",
+      "scope": "state",
+      "bytes": 2912045,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_SP.zip",
+      "scope": "state",
+      "bytes": 95247698,
+      "status": "verified"
+    },
+    {
+      "year": 2008,
+      "filename": "votacao_secao_2008_TO.zip",
+      "scope": "state",
+      "bytes": 2002462,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "detalhe_votacao_secao_2010.zip",
+      "scope": "all_states",
+      "bytes": 67345754,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_AC.zip",
+      "scope": "state",
+      "bytes": 2151806,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_AL.zip",
+      "scope": "state",
+      "bytes": 5372957,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_AM.zip",
+      "scope": "state",
+      "bytes": 6732008,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_AP.zip",
+      "scope": "state",
+      "bytes": 2378423,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_BA.zip",
+      "scope": "state",
+      "bytes": 35942337,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_BR.zip",
+      "scope": "national",
+      "bytes": 23737900,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_CE.zip",
+      "scope": "state",
+      "bytes": 20335031,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_DF.zip",
+      "scope": "state",
+      "bytes": 14253063,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_ES.zip",
+      "scope": "state",
+      "bytes": 7187448,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_GO.zip",
+      "scope": "state",
+      "bytes": 14666437,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_MA.zip",
+      "scope": "state",
+      "bytes": 13776930,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_MG.zip",
+      "scope": "state",
+      "bytes": 50844061,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_MS.zip",
+      "scope": "state",
+      "bytes": 4264262,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_MT.zip",
+      "scope": "state",
+      "bytes": 4851600,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_PA.zip",
+      "scope": "state",
+      "bytes": 16336162,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_PB.zip",
+      "scope": "state",
+      "bytes": 7365676,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_PE.zip",
+      "scope": "state",
+      "bytes": 21984002,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_PI.zip",
+      "scope": "state",
+      "bytes": 5521605,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_PR.zip",
+      "scope": "state",
+      "bytes": 26253865,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_RJ.zip",
+      "scope": "state",
+      "bytes": 72600829,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_RN.zip",
+      "scope": "state",
+      "bytes": 4776545,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_RO.zip",
+      "scope": "state",
+      "bytes": 3698714,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_RR.zip",
+      "scope": "state",
+      "bytes": 2083484,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_RS.zip",
+      "scope": "state",
+      "bytes": 32692293,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_SC.zip",
+      "scope": "state",
+      "bytes": 12360351,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_SE.zip",
+      "scope": "state",
+      "bytes": 3501698,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_SP.zip",
+      "scope": "state",
+      "bytes": 160321176,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_TO.zip",
+      "scope": "state",
+      "bytes": 2426995,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_VT.zip",
+      "scope": "transit",
+      "bytes": 687746,
+      "status": "verified"
+    },
+    {
+      "year": 2010,
+      "filename": "votacao_secao_2010_ZZ.zip",
+      "scope": "overseas",
+      "bytes": 713278,
+      "status": "verified"
+    }
+  ],
+  "failures": []
+}

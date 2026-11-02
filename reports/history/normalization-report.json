@@ -1,0 +1,283 @@
+{
+  "pipeline_version": 1,
+  "scope": "Canonical vote rows; 2000–2010 official section results and 2012+ BU records",
+  "missing_value_policy": "Blank, #NULO, #NE, -1, and -3 become NULL where documented; zero remains zero; absent source fields remain NULL.",
+  "legacy": [
+    {
+      "year": 2010,
+      "status": "normalized",
+      "vote_rows": 49001612,
+      "source_packages": 29,
+      "parquet_file": "derived/canonical/votes-2010.parquet",
+      "parquet_bytes": 123415421,
+      "section_rows": 2456141,
+      "section_source_packages": 1,
+      "section_missing_downloads": [],
+      "section_parquet_file": "derived/canonical/sections-2010.parquet",
+      "section_parquet_bytes": 11894026
+    },
+    {
+      "year": 2000,
+      "status": "normalized",
+      "vote_rows": 24076849,
+      "source_packages": 26,
+      "parquet_file": "derived/canonical/votes-2000.parquet",
+      "parquet_bytes": 61763117,
+      "section_rows": 616675,
+      "section_source_packages": 1,
+      "section_missing_downloads": [],
+      "section_parquet_file": "derived/canonical/sections-2000.parquet",
+      "section_parquet_bytes": 4050311
+    },
+    {
+      "year": 2001,
+      "status": "no_verified_sources",
+      "vote_rows": 0,
+      "source_packages": 0,
+      "parquet_file": null,
+      "parquet_bytes": 0,
+      "section_rows": 0,
+      "section_source_packages": 0,
+      "section_missing_downloads": [],
+      "section_parquet_file": null,
+      "section_parquet_bytes": 0
+    },
+    {
+      "year": 2002,
+      "status": "normalized",
+      "vote_rows": 41600879,
+      "source_packages": 27,
+      "parquet_file": "derived/canonical/votes-2002.parquet",
+      "parquet_bytes": 107004981,
+      "section_rows": 2083665,
+      "section_source_packages": 1,
+      "section_missing_downloads": [],
+      "section_parquet_file": "derived/canonical/sections-2002.parquet",
+      "section_parquet_bytes": 10288319
+    },
+    {
+      "year": 2003,
+      "status": "no_verified_sources",
+      "vote_rows": 0,
+      "source_packages": 0,
+      "parquet_file": null,
+      "parquet_bytes": 0,
+      "section_rows": 0,
+      "section_source_packages": 0,
+      "section_missing_downloads": [],
+      "section_parquet_file": null,
+      "section_parquet_bytes": 0
+    },
+    {
+      "year": 2004,
+      "status": "normalized",
+      "vote_rows": 27927922,
+      "source_packages": 26,
+      "parquet_file": "derived/canonical/votes-2004.parquet",
+      "parquet_bytes": 70597713,
+      "section_rows": 733599,
+      "section_source_packages": 1,
+      "section_missing_downloads": [],
+      "section_parquet_file": "derived/canonical/sections-2004.parquet",
+      "section_parquet_bytes": 5086081
+    },
+    {
+      "year": 2005,
+      "status": "no_verified_sources",
+      "vote_rows": 0,
+      "source_packages": 0,
+      "parquet_file": null,
+      "parquet_bytes": 0,
+      "section_rows": 0,
+      "section_source_packages": 0,
+      "section_missing_downloads": [],
+      "section_parquet_file": null,
+      "section_parquet_bytes": 0
+    },
+    {
+      "year": 2006,
+      "status": "normalized",
+      "vote_rows": 45162249,
+      "source_packages": 27,
+      "parquet_file": "derived/canonical/votes-2006.parquet",
+      "parquet_bytes": 118377776,
+      "section_rows": 2323870,
+      "section_source_packages": 1,
+      "section_missing_downloads": [],
+      "section_parquet_file": "derived/canonical/sections-2006.parquet",
+      "section_parquet_bytes": 11438518
+    },
+    {
+      "year": 2007,
+      "status": "no_verified_sources",
+      "vote_rows": 0,
+      "source_packages": 0,
+      "parquet_file": null,
+      "parquet_bytes": 0,
+      "section_rows": 0,
+      "section_source_packages": 0,
+      "section_missing_downloads": [],
+      "section_parquet_file": null,
+      "section_parquet_bytes": 0
+    },
+    {
+      "year": 2008,
+      "status": "normalized",
+      "vote_rows": 29525854,
+      "source_packages": 26,
+      "parquet_file": "derived/canonical/votes-2008.parquet",
+      "parquet_bytes": 73818095,
+      "section_rows": 818830,
+      "section_source_packages": 1,
+      "section_missing_downloads": [],
+      "section_parquet_file": "derived/canonical/sections-2008.parquet",
+      "section_parquet_bytes": 5773047
+    },
+    {
+      "year": 2009,
+      "status": "no_verified_sources",
+      "vote_rows": 0,
+      "source_packages": 0,
+      "parquet_file": null,
+      "parquet_bytes": 0,
+      "section_rows": 0,
+      "section_source_packages": 0,
+      "section_missing_downloads": [],
+      "section_parquet_file": null,
+      "section_parquet_bytes": 0
+    }
+  ],
+  "boletim_de_urna": [
+    {
+      "year": 2012,
+      "status": "normalized",
+      "vote_rows": 34430589,
+      "null_vote_rows": 0,
+      "source_members": 46,
+      "parquet_file": "derived/canonical/votes-2012.parquet",
+      "parquet_bytes": 180037914,
+      "section_rows": 493865,
+      "section_parquet_file": "derived/canonical/sections-2012.parquet",
+      "section_parquet_bytes": 6202059
+    },
+    {
+      "year": 2013,
+      "status": "no_converted_sources",
+      "source_members": 0
+    },
+    {
+      "year": 2014,
+      "status": "normalized",
+      "vote_rows": 56748147,
+      "null_vote_rows": 0,
+      "source_members": 56,
+      "parquet_file": "derived/canonical/votes-2014.parquet",
+      "parquet_bytes": 232213975,
+      "section_rows": 859958,
+      "section_parquet_file": "derived/canonical/sections-2014.parquet",
+      "section_parquet_bytes": 8159589
+    },
+    {
+      "year": 2015,
+      "status": "no_converted_sources",
+      "source_members": 0
+    },
+    {
+      "year": 2016,
+      "status": "normalized",
+      "vote_rows": 36685609,
+      "null_vote_rows": 0,
+      "source_members": 46,
+      "parquet_file": "derived/canonical/votes-2016.parquet",
+      "parquet_bytes": 150502211,
+      "section_rows": 523495,
+      "section_parquet_file": "derived/canonical/sections-2016.parquet",
+      "section_parquet_bytes": 4850249
+    },
+    {
+      "year": 2017,
+      "status": "no_converted_sources",
+      "source_members": 0
+    },
+    {
+      "year": 2018,
+      "status": "normalized",
+      "vote_rows": 73552486,
+      "null_vote_rows": 0,
+      "source_members": 56,
+      "parquet_file": "derived/canonical/votes-2018.parquet",
+      "parquet_bytes": 264963961,
+      "section_rows": 1641808,
+      "section_parquet_file": "derived/canonical/sections-2018.parquet",
+      "section_parquet_bytes": 15097677
+    },
+    {
+      "year": 2019,
+      "status": "no_converted_sources",
+      "source_members": 0
+    },
+    {
+      "year": 2020,
+      "status": "normalized",
+      "vote_rows": 37911271,
+      "null_vote_rows": 0,
+      "source_members": 83,
+      "parquet_file": "derived/canonical/votes-2020.parquet",
+      "parquet_bytes": 201870344,
+      "section_rows": 510892,
+      "section_parquet_file": "derived/canonical/sections-2020.parquet",
+      "section_parquet_bytes": 5035023
+    },
+    {
+      "year": 2021,
+      "status": "no_converted_sources",
+      "source_members": 0
+    },
+    {
+      "year": 2022,
+      "status": "normalized",
+      "vote_rows": 72978729,
+      "null_vote_rows": 0,
+      "source_members": 57,
+      "parquet_file": "derived/canonical/votes-2022.parquet",
+      "parquet_bytes": 371593485,
+      "section_rows": 1665598,
+      "section_parquet_file": "derived/canonical/sections-2022.parquet",
+      "section_parquet_bytes": 14808146
+    },
+    {
+      "year": 2023,
+      "status": "no_converted_sources",
+      "source_members": 0
+    },
+    {
+      "year": 2024,
+      "status": "normalized",
+      "vote_rows": 38124404,
+      "null_vote_rows": 0,
+      "source_members": 66,
+      "parquet_file": "derived/canonical/votes-2024.parquet",
+      "parquet_bytes": 745129474,
+      "section_rows": 584925,
+      "section_parquet_file": "derived/canonical/sections-2024.parquet",
+      "section_parquet_bytes": 7218842
+    },
+    {
+      "year": 2025,
+      "status": "no_converted_sources",
+      "source_members": 0
+    },
+    {
+      "year": 2026,
+      "status": "normalized",
+      "vote_rows": 69947081,
+      "null_vote_rows": 0,
+      "source_members": 56,
+      "parquet_file": "derived/canonical/votes-2026.parquet",
+      "parquet_bytes": 1309035523,
+      "section_rows": 1536059,
+      "section_parquet_file": "derived/canonical/sections-2026.parquet",
+      "section_parquet_bytes": 22232555
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Provide publicly reusable election data acquisition and analysis, followed by an interactive website with candidate search, territorial navigation, maps and charts. The TSE catalog's 425 available tabular BU packages across 2012–2026 cycles and supplementary contests have been downloaded and converted locally; see the [historical data report](historical-data.md) and [package-level evidence](../../reports/history/conversion-records.json). The interface defaults to Brazilian Portuguese; code identifiers and tooling use English.
+Provide publicly reusable election data acquisition and analysis, followed by an interactive website with candidate search, territorial navigation, maps and charts. The project has downloaded the 425 cataloged tabular BU ZIPs for 2012–2026 cycles and supplementary contests, and 170 official section-result ZIPs for 2000–2010. Local canonical Parquets contain 637,673,681 vote rows and 16,849,380 section/urn summary rows across the covered cycles. See the [historical data report](historical-data.md), [package-level BU evidence](../../reports/history/conversion-records.json), [download report](../../reports/history/legacy-results-downloads.json), and [field coverage audit](../../reports/history/canonical-coverage.json). The interface defaults to Brazilian Portuguese; code identifiers and tooling use English.
 
 ## Reproduction
 
@@ -31,7 +31,7 @@ Use parameterized queries in applications. Use `candidates` for BU display-name 
 
 ## Status and development
 
-See `reports/2026/` and `reports/history/` for generated validation evidence and [methodology](methodology.md) for interpretation. The 2012–2026 historical outputs retain year-specific source schemas and are not yet a harmonized dashboard dataset. Development follows issue → branch → commit → PR → review and tests → approved promotion. A local test run is not a deployment approval. No deployment or infrastructure configuration belongs in this public repository.
+See `reports/2026/` and `reports/history/` for generated evidence and [methodology](methodology.md) for interpretation. The canonical cross-election outputs are local and excluded from Git because of their size. Results from 2000–2010 are post-totalization section data without urn numbers; BU records begin in 2012. Independent expected-section and official-total reconciliation remain pending, and no hosted dashboard or national dataset is published. Development follows issue → branch → commit → PR → review and tests → approved promotion. A local test run is not a deployment approval. No deployment or infrastructure configuration belongs in this public repository.
 
 ## Roadmap
 
