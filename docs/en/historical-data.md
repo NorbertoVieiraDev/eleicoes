@@ -110,7 +110,7 @@ Fields absent from a year's layout are left empty (`NULL`). Country, state, muni
 
 The 2010 overseas (`ZZ`) and transit (`VT`) TXT files have no header. The adapter applies the published 15-column layout, validates each record width, and reserializes the fields without changing their values. This avoids guessing names or dropping rows because of a CSV reader difference.
 
-Raw data and derived Parquet are excluded from Git because of their size. The repository publishes scripts, inventories, coverage reports, and documentation. Local reconstruction uses Python and DuckDB as pinned in `requirements.txt`.
+Raw data and derived Parquet are excluded from Git because of their size. The public portal serves the 28 canonical Parquet files from private object storage; this repository publishes the processing scripts, inventories, field-coverage report, and SHA-512 checksums so readers can compare the published objects with the locally generated artifacts. No credentials or infrastructure configuration are published. Local reconstruction uses Python and DuckDB as pinned in `requirements.txt`.
 
 To rebuild the unified coverage, run from the repository root:
 
