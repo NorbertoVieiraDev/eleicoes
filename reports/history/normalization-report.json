@@ -4,19 +4,6 @@
   "missing_value_policy": "Blank, #NULO, #NE, -1, and -3 become NULL where documented; zero remains zero; absent source fields remain NULL.",
   "legacy": [
     {
-      "year": 2010,
-      "status": "normalized",
-      "vote_rows": 49001612,
-      "source_packages": 29,
-      "parquet_file": "derived/canonical/votes-2010.parquet",
-      "parquet_bytes": 123415421,
-      "section_rows": 2456141,
-      "section_source_packages": 1,
-      "section_missing_downloads": [],
-      "section_parquet_file": "derived/canonical/sections-2010.parquet",
-      "section_parquet_bytes": 11894026
-    },
-    {
       "year": 2000,
       "status": "normalized",
       "vote_rows": 24076849,
@@ -145,6 +132,19 @@
       "section_missing_downloads": [],
       "section_parquet_file": null,
       "section_parquet_bytes": 0
+    },
+    {
+      "year": 2010,
+      "status": "normalized",
+      "vote_rows": 49001612,
+      "source_packages": 29,
+      "parquet_file": "derived/canonical/votes-2010.parquet",
+      "parquet_bytes": 123415421,
+      "section_rows": 2456141,
+      "section_source_packages": 1,
+      "section_missing_downloads": [],
+      "section_parquet_file": "derived/canonical/sections-2010.parquet",
+      "section_parquet_bytes": 11894026
     }
   ],
   "boletim_de_urna": [
@@ -158,7 +158,7 @@
       "parquet_bytes": 180037914,
       "section_rows": 493865,
       "section_parquet_file": "derived/canonical/sections-2012.parquet",
-      "section_parquet_bytes": 6202059
+      "section_parquet_bytes": 6199557
     },
     {
       "year": 2013,
@@ -175,7 +175,7 @@
       "parquet_bytes": 232213975,
       "section_rows": 859958,
       "section_parquet_file": "derived/canonical/sections-2014.parquet",
-      "section_parquet_bytes": 8159589
+      "section_parquet_bytes": 8138734
     },
     {
       "year": 2015,
@@ -192,7 +192,7 @@
       "parquet_bytes": 150502211,
       "section_rows": 523495,
       "section_parquet_file": "derived/canonical/sections-2016.parquet",
-      "section_parquet_bytes": 4850249
+      "section_parquet_bytes": 4864865
     },
     {
       "year": 2017,
@@ -209,7 +209,7 @@
       "parquet_bytes": 264963961,
       "section_rows": 1641808,
       "section_parquet_file": "derived/canonical/sections-2018.parquet",
-      "section_parquet_bytes": 15097677
+      "section_parquet_bytes": 15066434
     },
     {
       "year": 2019,
@@ -226,7 +226,7 @@
       "parquet_bytes": 201870344,
       "section_rows": 510892,
       "section_parquet_file": "derived/canonical/sections-2020.parquet",
-      "section_parquet_bytes": 5035023
+      "section_parquet_bytes": 5058200
     },
     {
       "year": 2021,
@@ -243,7 +243,7 @@
       "parquet_bytes": 371593485,
       "section_rows": 1665598,
       "section_parquet_file": "derived/canonical/sections-2022.parquet",
-      "section_parquet_bytes": 14808146
+      "section_parquet_bytes": 14770338
     },
     {
       "year": 2023,
@@ -260,7 +260,7 @@
       "parquet_bytes": 745129474,
       "section_rows": 584925,
       "section_parquet_file": "derived/canonical/sections-2024.parquet",
-      "section_parquet_bytes": 7218842
+      "section_parquet_bytes": 7220688
     },
     {
       "year": 2025,
@@ -277,7 +277,7 @@
       "parquet_bytes": 1309035523,
       "section_rows": 1536059,
       "section_parquet_file": "derived/canonical/sections-2026.parquet",
-      "section_parquet_bytes": 22232555
+      "section_parquet_bytes": 22212492
     }
   ]
 }

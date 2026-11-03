@@ -2815,43 +2815,43 @@
       },
       {
         "file": "derived/canonical/sections-2012.parquet",
-        "bytes": 6202059,
-        "sha512": "72ed6f3fee663e3a35138a1824a0c2405ea47e059c3d59ecb107ae4c491b44b80ccbbc7b2ed26df421e920d6e0cf0eb23beac04b24d0c076fa15633abc7e9ba1"
+        "bytes": 6199557,
+        "sha512": "f33716a32f73d51825c56f062a6735fd467c4368f662bba8838def4cfce5a68be8a7efb78aed4119ee4990da7aaa8a62978237ce4e2967c7610588f3e84185bb"
       },
       {
         "file": "derived/canonical/sections-2014.parquet",
-        "bytes": 8159589,
-        "sha512": "3475b2766b7cd40f56e909dfe7fd1cb96c76aeb0ac59ae43548a74d2ccb84d7012f87001e83b61b5c1a6db85c0543fbe80f12913574c9c59dfdfbf96683dd7ce"
+        "bytes": 8138734,
+        "sha512": "b6e629264daad0532e3630852008d032d023c324efc15ed113d2f301f11b6e6224f1509b45cce22d8d82e63e65fa379f65564e715f60ada71684d00a4167955c"
       },
       {
         "file": "derived/canonical/sections-2016.parquet",
-        "bytes": 4850249,
-        "sha512": "a3dd59dba49a89bc06eb2a5f12c42d120f052e25e3ecdb4ef5d22ec3b0c8c92b821381f08add19fa168aba9693eb5dae6cbfa789f01bc8379cc2d1c95377b5bf"
+        "bytes": 4864865,
+        "sha512": "999a6f4b6e41f8aa1ceb18abf0f0b6a16feb87039a9574f04484980f4a48162fc3fc1df0e18cfe555b5a44212dfbc246a1717aef8635a7e60ef2c3acc7bbe8a2"
       },
       {
         "file": "derived/canonical/sections-2018.parquet",
-        "bytes": 15097677,
-        "sha512": "e2f7fbfffbb8f1dcb11621b6c0cb4ba3002c4d4cca5ad1a33e84e249c5293497e3cde0fd33b8a2c986436ef1523471da2a491bcf035138f921317028d0b9c91f"
+        "bytes": 15066434,
+        "sha512": "850ddcdbccd79204006cd672d063d96d33b303dc18f6997939ca786c42284bfa30d8c16c287fd6559f6e3c1fed61cd0a5a200585372a16a5f66e68beb3a1c6ea"
       },
       {
         "file": "derived/canonical/sections-2020.parquet",
-        "bytes": 5035023,
-        "sha512": "d9ca131cdd217831e06135a5bb239fbf8c00af8605b412f9ac60bbc3778710c7625902c35f370a77d772116dbe0ec3d2aa91634e5fbda809d37a35123a108152"
+        "bytes": 5058200,
+        "sha512": "9dde6e428a7e885a998ce860f1f560e34d886e062cc3e8b892930269d7f6289066bdea54660f23ef1df1ba71e6bde3cc67981ab8b1c3fb1202962ba858daac0f"
       },
       {
         "file": "derived/canonical/sections-2022.parquet",
-        "bytes": 14808146,
-        "sha512": "c33d2d833ab89423290b3c113235982c4a4518e894ee843b43e999cb35434e0f08c12c000089ee9c96eefa6bcefd10f6015927f5a274f4272a174c5a635f42d1"
+        "bytes": 14770338,
+        "sha512": "c5d49a2c04ba296e13d572016ab42ef01f7e7aa2246fed81da7dbb5e7f92e7a9722429180e1b925e92da3cdea35922c04a97f9a60f1cda3dfd27d12c0630d7d7"
       },
       {
         "file": "derived/canonical/sections-2024.parquet",
-        "bytes": 7218842,
-        "sha512": "8282277b8eaeb8bbd1cca3289df4b8c6459460a721323609df8c2ec0189202ddacf72c50fdb5d2ac2c170e745dd77eba89d9826c3d045b4feab2288b35b1fa8e"
+        "bytes": 7220688,
+        "sha512": "6490d1629d3daa618fd86d6c75efa2c816c8ba5f03ae59ab0e0376161ead32121afc415c6e7224e1d650b1be208e37d7b25684bbca6d19c44a869839539e9972"
       },
       {
         "file": "derived/canonical/sections-2026.parquet",
-        "bytes": 22232555,
-        "sha512": "f51c64b941ab8cdca25fb7f4309f189d58e7dfc9a249edbb301baafecfe037829ccdb1cda75edf1aac4108ef2f94e10357955008da905ab30d995b594ed66b5e"
+        "bytes": 22212492,
+        "sha512": "7e5c2ff3debe1646c5640ca9e6a3f594bb6be47bbdf01d922a597e9eb96f8b0f0b06611310aaa5f58021111ee426d673287769fa239e080b332057f27b87b044"
       }
     ],
     "rows": 16849380,

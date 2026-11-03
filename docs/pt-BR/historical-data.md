@@ -110,7 +110,7 @@ Campos que não existiam no layout da época ficam vazios (`NULL`). Os códigos 
 
 Os TXT de exterior (`ZZ`) e trânsito (`VT`) de 2010 não têm cabeçalho. O adaptador aplica a lista de 15 colunas publicada para esse layout, valida a largura de cada registro e reserializa os campos sem trocar os valores. Isso evita adivinhar nomes ou descartar linhas por uma diferença do leitor CSV.
 
-Dados brutos e Parquet derivados ficam fora do Git devido ao tamanho. O repositório publica scripts, inventários, relatórios de cobertura e documentação. A reconstrução é feita localmente com Python e DuckDB conforme `requirements.txt`.
+Dados brutos e Parquet derivados ficam fora do Git devido ao tamanho. O portal público serve os 28 arquivos Parquet canônicos por armazenamento privado de objetos; este repositório publica os scripts de processamento, inventários, relatório de cobertura por campo e SHA-512 para que qualquer pessoa compare os objetos publicados com os artefatos gerados localmente. Nenhuma credencial ou configuração de infraestrutura é publicada. A reconstrução é feita localmente com Python e DuckDB conforme `requirements.txt`.
 
 Para reconstruir a cobertura unificada, execute na raiz do repositório:
 
