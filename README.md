@@ -12,14 +12,16 @@ Exploração aberta e reproduzível dos dados eleitorais brasileiros publicados 
 
 [Historical BU collection and schema differences](docs/en/historical-data.md) · [Coleta histórica e diferenças de formato](docs/pt-BR/historical-data.md)
 
+[State-scoped Parquet files: generation and integrity checks](docs/en/state-partitioning.md) · [Parquets separados por estado: geração e verificações de integridade](docs/pt-BR/state-partitioning.md)
+
 ## Current scope / Escopo atual
 
 - **Historical BU files:** the TSE catalog snapshot contains 425 tabular ZIP packages across regular election cycles 2012–2026 and supplementary contests. All 425 were downloaded and converted locally into 466 Parquet member files (420,378,316 rows; approximately 5.66 GB). Original ZIPs and Parquets are excluded from Git; public package-level evidence is in [`reports/history/conversion-records.json`](reports/history/conversion-records.json).
 - **Arquivos históricos de BU:** o retrato do catálogo do TSE contém 425 pacotes ZIP tabulares dos ciclos regulares de 2012 a 2026 e eleições suplementares. Os 425 foram baixados e convertidos localmente em 466 arquivos Parquet (420.378.316 linhas; cerca de 5,66 GB). Os ZIPs e Parquets originais ficam fora do Git; as evidências por pacote estão em [`reports/history/conversion-records.json`](reports/history/conversion-records.json).
-- **Cross-election canonical data:** 170 TSE ZIP resources from 2000–2010 were integrity-checked and normalized alongside BU records for 2012, 2014, 2016, 2018, 2020, 2022, 2024 and 2026. This produced 637,673,681 vote rows and 16,849,380 section/urn summary rows in 28 local Parquet files (about 4.14 GB). Results from 2000–2010 are only at section level and do not contain urn numbers. See [`reports/history/normalization-report.json`](reports/history/normalization-report.json) and the field-level [`coverage audit`](reports/history/canonical-coverage.json). All downloaded source ZIPs and derived Parquets are excluded from Git.
+- **Cross-election canonical data:** 170 TSE ZIP resources from 2000–2010 were integrity-checked and normalized alongside BU records for 2012, 2014, 2016, 2018, 2020, 2022, 2024 and 2026. This produced 637,673,681 vote rows and 16,849,380 section/urn summary rows in 28 local Parquet files (about 4.14 GB). Results from 2000–2010 are only at section level and do not contain urn numbers. See [`reports/history/normalization-report.json`](reports/history/normalization-report.json) and the field-level [coverage audit](reports/history/canonical-coverage.json). All downloaded source ZIPs and derived Parquets are excluded from Git.
 - **Base histórica unificada:** 170 pacotes ZIP do TSE de 2000–2010 foram verificados e padronizados junto com os BUs de 2012, 2014, 2016, 2018, 2020, 2022, 2024 e 2026. O resultado local tem 637.673.681 linhas de votos e 16.849.380 linhas de totais por seção/urna em 28 Parquets (cerca de 4,14 GB). Os resultados de 2000–2010 só chegam ao nível de seção e não incluem número da urna. Consulte [`reports/history/normalization-report.json`](reports/history/normalization-report.json) e a [auditoria de disponibilidade por campo](reports/history/canonical-coverage.json). ZIPs e Parquets ficam fora do Git.
-- The 2026 analytical query base is prepared. Independent expected-section and official-total reconciliation remain pending. The canonical historical tables are available locally; no interactive website or hosted national dataset is published yet.
-- A base analítica de consulta de 2026 está preparada. Ainda falta conciliar com cadastro independente de seções e totais oficiais. As tabelas históricas unificadas estão disponíveis localmente; ainda não há site interativo nem hospedagem pública da base nacional.
+- The interactive portal is published at [estatisticasbrasil.com.br/eleicoes](https://estatisticasbrasil.com.br/eleicoes/). Its canonical Parquet files are hosted separately from Git. State-scoped copies are being prepared as an additional query layout; their generation and integrity method is documented above. Independent expected-section and official-total reconciliation for the 2026 analytical query base remains pending.
+- O portal interativo está publicado em [estatisticasbrasil.com.br/eleicoes](https://estatisticasbrasil.com.br/eleicoes/). Os Parquets canônicos são hospedados separadamente do Git. Arquivos por estado estão sendo preparados como organização adicional para consulta; o método de geração e integridade está documentado acima. Ainda falta conciliar a base analítica de 2026 com cadastro independente de seções e totais oficiais.
 
 ## Layout / Organização
 
@@ -32,6 +34,7 @@ data/
   README.md        # rules for adding historical elections
 derived/history/  # local source-layout Parquets; ignored by Git
 derived/canonical/ # local cross-election BI tables and coverage audit; ignored by Git
+derived/partitioned/ # optional state-scoped query copies; ignored by Git
 docs/
   en/
   pt-BR/
@@ -72,8 +75,8 @@ Hashes conferem os bytes baixados contra os valores publicados. Não verificam a
 
 ## Public repository policy / Política do repositório público
 
-Publish source code, bilingual documentation, official source manifests and aggregate reports. Never commit passwords, tokens, connection strings, private hostnames, production configuration, infrastructure definitions, local execution logs or large datasets. The repository is intended for public reuse; it does not yet provide a hosted dashboard or bundled national dataset.
+Publish source code, bilingual documentation, official source manifests and aggregate reports. Never commit passwords, tokens, connection strings, private hostnames, production configuration, infrastructure definitions, local execution logs or large datasets. The portal's implementation remains in a separate private repository; this public repository contains the reproducible data methodology and public technical documentation.
 
-Publicar código, documentação bilíngue, manifestos das fontes oficiais e relatórios agregados. Nunca versionar senhas, tokens, conexões, endereços privados, configuração de produção, definições de infraestrutura, logs locais ou bases grandes. O objetivo é permitir reutilização pública; ainda não há dashboard hospedado ou base nacional empacotada para download neste repositório.
+Publicar código, documentação bilíngue, manifestos das fontes oficiais e relatórios agregados. Nunca versionar senhas, tokens, conexões, endereços privados, configuração de produção, definições de infraestrutura, logs locais ou bases grandes. A implementação do portal permanece em um repositório privado separado; este repositório público contém a metodologia reproduzível dos dados e a documentação técnica pública.
 
 License: code and original documentation use [MIT](LICENSE). TSE source data retain their own attribution license; see [data provenance](docs/en/sources.md) / [proveniência](docs/pt-BR/sources.md).
