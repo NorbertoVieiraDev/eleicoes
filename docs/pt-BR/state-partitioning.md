@@ -30,3 +30,7 @@ Um arquivo por estado é uma otimização de consulta, não uma nova base oficia
 ## Armazenamento e publicação
 
 Esses arquivos derivados duplicam dados. Antes do envio, some os tamanhos medidos e confirme que há espaço livre suficiente no bucket. Não apague nem substitua os Parquets canônicos neste processo. Publique as partições sob o mesmo prefixo `canonical/` somente depois que o leitor do site aceitar esse padrão de nome. Não armazene credenciais neste repositório.
+
+## Relatórios de auditoria gerados
+
+O [relatório-resumo público](../../reports/history/state-partitioning-summary.json) lista tamanhos de entrada e saída e quantidades de linhas por ano. Cada ano também tem um relatório detalhado com hashes SHA-512 de origem e das partições, contagens de linhas por estado, somas de votos, contagens de votos com valor nulo e tamanhos dos arquivos. Por exemplo, [2024](../../reports/history/state-partitioning-2024.json). Esses relatórios contêm somente metadados; os Parquets não são armazenados no Git.
