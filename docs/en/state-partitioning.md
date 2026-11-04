@@ -30,3 +30,7 @@ A state file is a query optimization, not a new official TSE dataset. The annual
 ## Storage and publication
 
 These are duplicate derived files. Before upload, sum their measured sizes and confirm that the bucket has sufficient free storage. Do not delete or replace canonical files as part of this process. Publish state shards under the same `canonical/` prefix only after the public site reader supports the shard filename pattern. Keep credentials out of this repository.
+
+## Generated audit reports
+
+The public [summary report](../../reports/history/state-partitioning-summary.json) lists input and output sizes and row totals by year. Each year also has a detailed report with source and shard SHA-512 hashes, per-state row counts, vote sums, null-vote counts, and file sizes. For example, [2024](../../reports/history/state-partitioning-2024.json). These reports contain metadata only; Parquet data files are not stored in Git.
