@@ -14,6 +14,8 @@ Exploração aberta e reproduzível dos dados eleitorais brasileiros publicados 
 
 [State-scoped Parquet files: generation and integrity checks](docs/en/state-partitioning.md) · [Parquets separados por estado: geração e verificações de integridade](docs/pt-BR/state-partitioning.md)
 
+[Generated partition audit reports (row totals and SHA-512 hashes)](reports/history/state-partitioning-summary.json)
+
 ## Current scope / Escopo atual
 
 - **Historical BU files:** the TSE catalog snapshot contains 425 tabular ZIP packages across regular election cycles 2012–2026 and supplementary contests. All 425 were downloaded and converted locally into 466 Parquet member files (420,378,316 rows; approximately 5.66 GB). Original ZIPs and Parquets are excluded from Git; public package-level evidence is in [`reports/history/conversion-records.json`](reports/history/conversion-records.json).
