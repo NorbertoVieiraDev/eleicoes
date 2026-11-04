@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-04T21:24:44Z",
+  "method_script": "scripts/partition_canonical.py",
+  "validation": "The script checked every source state group. All 28 canonical source Parquet byte lengths and SHA-512 hashes matched the current R2 objects.",
+  "totals": {
+    "source_files": 0,
+    "input_files": 28,
+    "input_bytes": 4142385600,
+    "input_rows": 654523061,
+    "input_vote_sum": "6611667413",
+    "shard_files": 754,
+    "shard_bytes": 2198524982,
+    "shard_rows": 654523061
+  },
+  "years": [
+    {
+      "year": 2000,
+      "input_bytes": 65813428,
+      "input_rows": 24693524,
+      "shard_files": 50,
+      "shard_bytes": 64598866
+    },
+    {
+      "year": 2002,
+      "input_bytes": 117293300,
+      "input_rows": 43684544,
+      "shard_files": 55,
+      "shard_bytes": 103616323
+    },
+    {
+      "year": 2004,
+      "input_bytes": 75683794,
+      "input_rows": 28661521,
+      "shard_files": 52,
+      "shard_bytes": 74751591
+    },
+    {
+      "year": 2006,
+      "input_bytes": 129816294,
+      "input_rows": 47486119,
+      "shard_files": 55,
+      "shard_bytes": 116404524
+    },
+    {
+      "year": 2008,
+      "input_bytes": 79591142,
+      "input_rows": 30344684,
+      "shard_files": 52,
+      "shard_bytes": 78598441
+    },
+    {
+      "year": 2010,
+      "input_bytes": 135309447,
+      "input_rows": 51457753,
+      "shard_files": 58,
+      "shard_bytes": 123633570
+    },
+    {
+      "year": 2012,
+      "input_bytes": 186237471,
+      "input_rows": 34924454,
+      "shard_files": 52,
+      "shard_bytes": 123602268
+    },
+    {
+      "year": 2014,
+      "input_bytes": 240352709,
+      "input_rows": 57608105,
+      "shard_files": 56,
+      "shard_bytes": 212836442
+    },
+    {
+      "year": 2016,
+      "input_bytes": 155367076,
+      "input_rows": 37209104,
+      "shard_files": 52,
+      "shard_bytes": 139677958
+    },
+    {
+      "year": 2018,
+      "input_bytes": 280030395,
+      "input_rows": 75194294,
+      "shard_files": 56,
+      "shard_bytes": 274313892
+    },
+    {
+      "year": 2020,
+      "input_bytes": 206928544,
+      "input_rows": 38422163,
+      "shard_files": 52,
+      "shard_bytes": 153226467
+    },
+    {
+      "year": 2022,
+      "input_bytes": 386363823,
+      "input_rows": 74644327,
+      "shard_files": 56,
+      "shard_bytes": 306574749
+    },
+    {
+      "year": 2024,
+      "input_bytes": 752350162,
+      "input_rows": 38709329,
+      "shard_files": 52,
+      "shard_bytes": 147255707
+    },
+    {
+      "year": 2026,
+      "input_bytes": 1331248015,
+      "input_rows": 71483140,
+      "shard_files": 56,
+      "shard_bytes": 279434184
+    }
+  ]
+}
