@@ -34,3 +34,27 @@ Esses arquivos derivados duplicam dados. Antes do envio, some os tamanhos medido
 ## Relatórios de auditoria gerados
 
 O [relatório-resumo público](../../reports/history/state-partitioning-summary.json) lista tamanhos de entrada e saída e quantidades de linhas por ano. Cada ano também tem um relatório detalhado com hashes SHA-512 de origem e das partições, contagens de linhas por estado, somas de votos, contagens de votos com valor nulo e tamanhos dos arquivos. Por exemplo, [2024](../../reports/history/state-partitioning-2024.json). Esses relatórios contêm somente metadados; os Parquets não são armazenados no Git.
+
+## Geração com recursos limitados
+
+A ordenação global continua obrigatória por padrão. Em ambientes de nuvem com
+pouco espaço temporário, é possível limitar memória e disco e permitir uma
+alternativa por partição:
+
+```sh
+python scripts/partition_canonical.py --input /dados/votes-2018.parquet \
+  --output-dir /dados/shards --threads 1 --memory-limit 5GiB \
+  --temp-dir /dados/spill --max-temp-size 3GiB --sort-mode best-effort
+```
+
+`best-effort` tenta a mesma ordenação e, somente se o DuckDB lançar
+`OutOfMemoryException` durante o COPY ordenado, remove a saída temporária inválida
+e repete a cópia do mesmo estado sem ordenação global. Outros erros continuam
+interrompendo a execução. `none` permite escolher diretamente a cópia sem
+ordenação; `required` mantém o comportamento anterior. Colunas, valores,
+duplicatas, totais e verificações são preservados em todos os modos.
+
+O manifesto registra `sort_mode`, os limites solicitados e `sort_applied` em cada
+partição. Uma partição sem ordenação global pode exigir mais leitura para filtros
+específicos; não atribua a ela medições de uma partição ordenada. Não há upload,
+remoção de canônicos ou publicação de dados neste comando.

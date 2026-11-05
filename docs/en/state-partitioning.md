@@ -34,3 +34,24 @@ These are duplicate derived files. Before upload, sum their measured sizes and c
 ## Generated audit reports
 
 The public [summary report](../../reports/history/state-partitioning-summary.json) lists input and output sizes and row totals by year. Each year also has a detailed report with source and shard SHA-512 hashes, per-state row counts, vote sums, null-vote counts, and file sizes. For example, [2024](../../reports/history/state-partitioning-2024.json). These reports contain metadata only; Parquet data files are not stored in Git.
+
+## Resource-bounded generation
+
+Global sorting is still required by default. For constrained cloud environments,
+optional `--memory-limit`, `--temp-dir` and `--max-temp-size` settings bound DuckDB
+resources. `--sort-mode best-effort` retries a state's COPY without global sorting
+only if the sorted COPY raises `duckdb.OutOfMemoryException`; it removes the
+unvalidated temporary output before retrying. Other errors still abort. Explicit
+`--sort-mode none` skips sorting, while `required` preserves the previous default.
+All modes retain source columns, values, duplicates and integrity checks.
+
+The manifest records `sort_mode`, requested resource limits and each shard's
+`sort_applied`. Unsorted shards may require more reads for specific filters;
+benchmark them separately. The script never uploads data or removes canonical
+inputs. Example:
+
+```sh
+python scripts/partition_canonical.py --input /data/votes-2018.parquet \
+  --output-dir /data/shards --threads 1 --memory-limit 5GiB \
+  --temp-dir /data/spill --max-temp-size 3GiB --sort-mode best-effort
+```
