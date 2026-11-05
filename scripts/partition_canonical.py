@@ -37,6 +37,11 @@ def main() -> None:
     parser.add_argument("--input", required=True, type=pathlib.Path, help="Annual canonical votes-YYYY.parquet or sections-YYYY.parquet")
     parser.add_argument("--output-dir", required=True, type=pathlib.Path, help="Directory for state-scoped Parquet files")
     parser.add_argument("--threads", type=int, default=2)
+    parser.add_argument("--sort-mode", choices=["required", "best-effort", "none"], default="required",
+                        help="required preserves existing behavior; best-effort retries only sort resource failures without global sorting")
+    parser.add_argument("--memory-limit", help="Optional DuckDB memory limit, e.g. 5GiB")
+    parser.add_argument("--temp-dir", type=pathlib.Path, help="Optional external DuckDB spill directory")
+    parser.add_argument("--max-temp-size", help="Optional spill limit, e.g. 3GiB")
     args = parser.parse_args()
 
     source = args.input.resolve()
@@ -50,6 +55,15 @@ def main() -> None:
 
     con = duckdb.connect()
     con.execute(f"SET threads={max(1, args.threads)}")
+    if args.memory_limit:
+        con.execute(f"SET memory_limit={sql_string(args.memory_limit)}")
+    if args.temp_dir:
+        args.temp_dir.mkdir(parents=True, exist_ok=True)
+        con.execute(f"SET temp_directory={sql_string(str(args.temp_dir.resolve()))}")
+    if args.max_temp_size:
+        con.execute(f"SET max_temp_directory_size={sql_string(args.max_temp_size)}")
+    if args.sort_mode != "required":
+        con.execute("SET preserve_insertion_order=false")
     source_sql = f"read_parquet({sql_string(str(source))})"
     columns = {row[0] for row in con.execute(f"DESCRIBE SELECT * FROM {source_sql}").fetchall()}
     if "state_code" not in columns:
@@ -72,11 +86,24 @@ def main() -> None:
         target = args.output_dir / f"{kind}-{year}-{state}.parquet"
         temporary = target.with_suffix(".parquet.part")
         predicate = '"state_code" IS NULL' if state_code is None else f'"state_code" IS NOT DISTINCT FROM {sql_string(str(state_code))}'
-        sort_sql = f" ORDER BY {order_by}" if order_by else ""
-        con.execute(
-            f"COPY (SELECT * FROM {source_sql} WHERE {predicate}{sort_sql}) "
-            f"TO {sql_string(str(temporary))} (FORMAT PARQUET, COMPRESSION ZSTD)"
-        )
+        sort_applied = bool(order_by) and args.sort_mode != "none"
+        sort_sql = f" ORDER BY {order_by}" if sort_applied else ""
+        def copy_sql(sort):
+            return (
+                f"COPY (SELECT * FROM {source_sql} WHERE {predicate}{sort}) "
+                f"TO {sql_string(str(temporary))} (FORMAT PARQUET, COMPRESSION ZSTD)"
+            )
+        try:
+            con.execute(copy_sql(sort_sql))
+        except duckdb.OutOfMemoryException:
+            if args.sort_mode != "best-effort" or not sort_applied:
+                raise
+            # A failed sort is not a validated output. Retry the same rows and
+            # columns in a streaming COPY; never suppress other failures.
+            temporary.unlink(missing_ok=True)
+            print(f"{target.name}: sort exceeded resources; retrying without global sort", flush=True)
+            con.execute(copy_sql(""))
+            sort_applied = False
         temporary.replace(target)
 
         check = con.execute(
@@ -96,6 +123,7 @@ def main() -> None:
             "null_vote_rows": int(null_vote_rows),
             "bytes": target.stat().st_size,
             "sha512": sha512(target),
+            "sort_applied": sort_applied,
         })
         print(f"{target.name}: {row_count:,} rows; {target.stat().st_size:,} bytes", flush=True)
 
@@ -104,7 +132,10 @@ def main() -> None:
 
     report = {
         "format_version": 1,
-        "method": "DuckDB COPY of unchanged source columns, filtered by state_code and sorted by available geographic/election columns.",
+        "method": "DuckDB COPY of unchanged source columns, filtered by state_code; see sort_mode and each shard's sort_applied.",
+        "sort_mode": args.sort_mode,
+        "resources": {"threads": max(1, args.threads), "memory_limit": args.memory_limit,
+                      "max_temp_size": args.max_temp_size},
         "source": source.name,
         "source_bytes": source.stat().st_size,
         "source_sha512": sha512(source),

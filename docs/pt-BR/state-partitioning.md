@@ -34,3 +34,58 @@ Esses arquivos derivados duplicam dados. Antes do envio, some os tamanhos medido
 ## Relatórios de auditoria gerados
 
 O [relatório-resumo público](../../reports/history/state-partitioning-summary.json) lista tamanhos de entrada e saída e quantidades de linhas por ano. Cada ano também tem um relatório detalhado com hashes SHA-512 de origem e das partições, contagens de linhas por estado, somas de votos, contagens de votos com valor nulo e tamanhos dos arquivos. Por exemplo, [2024](../../reports/history/state-partitioning-2024.json). Esses relatórios contêm somente metadados; os Parquets não são armazenados no Git.
+
+## Geração com recursos limitados
+
+A ordenação global continua obrigatória por padrão. Em ambientes de nuvem com
+pouco espaço temporário, é possível limitar memória e disco e permitir uma
+alternativa por partição:
+
+```sh
+python scripts/partition_canonical.py --input /dados/votes-2018.parquet \
+  --output-dir /dados/shards --threads 1 --memory-limit 5GiB \
+  --temp-dir /dados/spill --max-temp-size 3GiB --sort-mode best-effort
+```
+
+`best-effort` tenta a mesma ordenação e, somente se o DuckDB lançar
+`OutOfMemoryException` durante o COPY ordenado, remove a saída temporária inválida
+e repete a cópia do mesmo estado sem ordenação global. Outros erros continuam
+interrompendo a execução. `none` permite escolher diretamente a cópia sem
+ordenação; `required` mantém o comportamento anterior. Colunas, valores,
+duplicatas, totais e verificações são preservados em todos os modos.
+
+O manifesto registra `sort_mode`, os limites solicitados e `sort_applied` em cada
+partição. Uma partição sem ordenação global pode exigir mais leitura para filtros
+específicos; não atribua a ela medições de uma partição ordenada. Não há upload,
+remoção de canônicos ou publicação de dados neste comando.
+
+## Ordenar uma partição grande sem carregar textos repetidos no sort
+
+`scripts/sort_partition_bounded.py` reordena uma partição já validada. Ele cria
+dicionários reversíveis para campos de texto com até um milhão de valores,
+ordena IDs compactos e reconstrói as colunas originais em lotes Arrow antes de
+gravação. IDs usados como chaves seguem a ordem lexical original, com nulos ao
+final. Nenhuma coluna de dicionário aparece no Parquet final.
+
+Instale os requisitos opcionais fora do site:
+
+```sh
+python -m pip install -r requirements-partition.txt
+python scripts/sort_partition_bounded.py \
+  --input /dados/shards/votes-2024-SP.parquet --output-dir /dados/sorted \
+  --expected-input-sha512 HASH_DA_PARTICAO_NO_MANIFESTO \
+  --canonical-sha512 HASH_DO_CANONICO_ANUAL_NO_MANIFESTO
+```
+
+O processo usa um thread, até 6 GiB de memória e 3 GiB de spill. Mantém a projeção
+de colunas e grava em lotes de 122.880 linhas. Confere esquema, identidade da
+entrada, contagens, votos/nulos e dois agregados de hash sobre todas as colunas.
+Esses hashes lógicos são diagnósticos, não uma prova sem colisões; os testes
+sintéticos verificam `EXCEPT ALL` exato em ambas as direções, duplicatas e nulos.
+Falhas interrompem a execução e removem a saída parcial.
+
+A saída inclui 12 caracteres do SHA-512 no nome e ganha um novo manifesto. Use
+esse nome imutável ao publicar: não substitua um arquivo que possa estar sendo
+lido por requisições Range. O comando não envia dados ao R2. Na validação em
+nuvem de 05/11/2026, as cinco partições SP de votos de 2018–2026 antes sem
+ordenação foram reconstruídas com ordenação global e esquema/diagnósticos iguais.
