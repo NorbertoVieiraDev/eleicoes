@@ -58,3 +58,34 @@ O manifesto registra `sort_mode`, os limites solicitados e `sort_applied` em cad
 partição. Uma partição sem ordenação global pode exigir mais leitura para filtros
 específicos; não atribua a ela medições de uma partição ordenada. Não há upload,
 remoção de canônicos ou publicação de dados neste comando.
+
+## Ordenar uma partição grande sem carregar textos repetidos no sort
+
+`scripts/sort_partition_bounded.py` reordena uma partição já validada. Ele cria
+dicionários reversíveis para campos de texto com até um milhão de valores,
+ordena IDs compactos e reconstrói as colunas originais em lotes Arrow antes de
+gravação. IDs usados como chaves seguem a ordem lexical original, com nulos ao
+final. Nenhuma coluna de dicionário aparece no Parquet final.
+
+Instale os requisitos opcionais fora do site:
+
+```sh
+python -m pip install -r requirements-partition.txt
+python scripts/sort_partition_bounded.py \
+  --input /dados/shards/votes-2024-SP.parquet --output-dir /dados/sorted \
+  --expected-input-sha512 HASH_DA_PARTICAO_NO_MANIFESTO \
+  --canonical-sha512 HASH_DO_CANONICO_ANUAL_NO_MANIFESTO
+```
+
+O processo usa um thread, até 6 GiB de memória e 3 GiB de spill. Mantém a projeção
+de colunas e grava em lotes de 122.880 linhas. Confere esquema, identidade da
+entrada, contagens, votos/nulos e dois agregados de hash sobre todas as colunas.
+Esses hashes lógicos são diagnósticos, não uma prova sem colisões; os testes
+sintéticos verificam `EXCEPT ALL` exato em ambas as direções, duplicatas e nulos.
+Falhas interrompem a execução e removem a saída parcial.
+
+A saída inclui 12 caracteres do SHA-512 no nome e ganha um novo manifesto. Use
+esse nome imutável ao publicar: não substitua um arquivo que possa estar sendo
+lido por requisições Range. O comando não envia dados ao R2. Na validação em
+nuvem de 05/11/2026, as cinco partições SP de votos de 2018–2026 antes sem
+ordenação foram reconstruídas com ordenação global e esquema/diagnósticos iguais.

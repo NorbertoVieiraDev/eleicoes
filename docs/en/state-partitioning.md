@@ -55,3 +55,23 @@ python scripts/partition_canonical.py --input /data/votes-2018.parquet \
   --output-dir /data/shards --threads 1 --memory-limit 5GiB \
   --temp-dir /data/spill --max-temp-size 3GiB --sort-mode best-effort
 ```
+
+## Globally sort large shards with dictionary-coded batches
+
+Optional `scripts/sort_partition_bounded.py` sorts a verified state shard without
+carrying repeated strings through the sort. Text fields with up to one million
+distinct values use reversible dictionary IDs. Sort-key dictionaries preserve
+lexical order and place nulls last; original columns/types are reconstructed in
+122,880-row Arrow batches. No dictionary columns enter the final Parquet.
+
+Install `requirements-partition.txt` (DuckDB 1.4.3, PyArrow 20.0.0), then provide
+`--input`, `--output-dir`, `--expected-input-sha512` and `--canonical-sha512`.
+The helper uses one thread, 6 GiB memory and 3 GiB spill. It checks schemas, input
+identity, rows/votes/nulls and two all-column logical hash aggregates. These are
+diagnostics, not a collision-free proof. Synthetic tests compare exact multisets
+in both directions, including duplicates, lexical keys and nulls.
+
+The output filename includes 12 SHA-512 characters and has a new manifest. Publish
+that immutable name instead of replacing an object during active Range reads.
+The helper does not upload anything. All five previously unsorted SP vote shards
+for 2018–2026 completed this repair in the 2026-11-05 cloud validation.
